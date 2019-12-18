@@ -1,0 +1,19 @@
+{
+  "name": "joeco.me",
+  "version": "1.0.0",
+  "description": "joeco.me",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joecof/joeco.me.git"
+  },
+  "author": "joeco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joecof/joeco.me/issues"
+  },
+  "homepage": "https://github.com/joecof/joeco.me#readme"
+}
