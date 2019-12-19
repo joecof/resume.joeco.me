@@ -6,4 +6,8 @@ app.get('/', (req, res) => {
   res.send('Hello world\n');
 });
 
-var server = app.listen(process.env.PORT || 3000);
+app.get('/api', (req, res) => {
+  res.send("we are in api route");
+})
+
+app.listen(process.env.PORT || 3000);
