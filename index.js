@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const helmet = require('helmet');
 const path = require('path');
+const bodyParser = require('body-parser');
 
 app.use(helmet());
 app.use(bodyParser.urlencoded({
