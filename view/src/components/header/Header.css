@@ -1,0 +1,16 @@
+.Header-container {
+  text-align: center;
+  min-height: 70vh;
+}
+
+.Header-name {
+  font-size: 72pt;
+}
+
+.Header-contact {
+  font-size: 22pt;
+}
+
+.Header-github {
+  font-size: 22pt;
+}
