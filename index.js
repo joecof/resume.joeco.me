@@ -21,18 +21,14 @@ app.use((req, res, next) => {
   next();
 })
 
-// app.use('/', (req, res, next) => {
-//   res.send('Hello World');
-// })
-
 // **************************************************************************** //
 
 // *************************************************************** //
 //                    Serving Build File                       //  
 
-  app.use(express.static(path.join(__dirname, './test')));
+  app.use(express.static(path.join(__dirname, './client')));
   app.get('*', (req, res) => {
-    res.sendfile(path.join(__dirname = './test/index.html'));
+    res.sendfile(path.join(__dirname = './client/index.html'));
   });
 
 app.listen(process.env.PORT || 3001, () => {
