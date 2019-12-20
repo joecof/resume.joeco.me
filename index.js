@@ -30,9 +30,9 @@ app.use((req, res, next) => {
 // *************************************************************** //
 //                    Serving Build File                       //  
 
-  app.use(express.static(path.join(__dirname, './client/build')));
+  app.use(express.static(path.join(__dirname, './build')));
   app.get('*', (req, res) => {
-    res.sendfile(path.join(__dirname = './client/build/index.html'));
+    res.sendfile(path.join(__dirname = './build/index.html'));
   });
 
 app.listen(process.env.PORT || 3001, () => {
