@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
-import Header from '../header/Header';
 import Navbar from '../navbar/Navbar';
-
+import Header from '../header/Header';
 import DownArrow from '../downArrow/DownArrow';
+import Skills from '../skills/Skills';
+
 import { Link, animateScroll as scroll } from "react-scroll";
 
 
@@ -16,7 +17,8 @@ class Resume extends Component {
       <div className= "Resume-container">
         <Navbar/>
         <Header/>
-          <Link onClick={() => scroll.scrollTo(1000)} > <DownArrow/></Link>
+        <Link onClick={() => scroll.scrollTo(1000)} > <DownArrow/></Link>
+        <Skills/>
       </div>
     )
   }

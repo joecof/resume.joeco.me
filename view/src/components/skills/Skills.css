@@ -1,0 +1,14 @@
+.Skills-container {
+  margin-top:100px;
+  text-align:center;
+
+}
+
+.Skills-name {
+  font-size: 45pt;
+}
+
+.Skills-radarContainer {
+  display:flex;
+  flex-direction: row;
+}
