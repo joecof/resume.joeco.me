@@ -1,0 +1,13 @@
+.Modal-container {
+  text-align:center;
+  min-height: 20vh;
+}
+
+.Modal-button {
+  border: 1px solid lightgray !important;
+}
+
+.Modal-text {
+  font-size: 20pt;
+  padding:5px;
+}

@@ -4,7 +4,6 @@ import anime from 'animejs';
 
 import './DownArrow.css';
 
-
 class DownArrow extends Component {
 
   componentDidMount() {

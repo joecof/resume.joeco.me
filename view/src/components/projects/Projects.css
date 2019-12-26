@@ -1,0 +1,14 @@
+.Projects-container {
+  margin-bottom: 350px;
+  min-height: 100vh;
+  /* background-color: #f2f2f2; */
+  padding: 50px 0 0 0;
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top:100px;
+}
+
+.Projects-name {
+  font-size: 45pt;
+}

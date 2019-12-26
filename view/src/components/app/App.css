@@ -1,7 +1,16 @@
 .App {
   position: relative;
-  height: 300rem;
   min-height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  /* background-color:#f2f2f2 */
+}
+
+.App-download {
+  width: 35px;
+  margin-left:20px;
+}
+
+.message-id {
+  font-size: 14pt;
 }

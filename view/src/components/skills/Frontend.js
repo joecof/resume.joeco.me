@@ -27,6 +27,9 @@ class Frontend extends Component {
         fontSize: 18
       }
     },
+    animation: {
+      duration: 3000
+    },
     maintainAspectRatio: false
   };
 
@@ -36,7 +39,7 @@ class Frontend extends Component {
         <Radar
             data={this.data}
             width={500}
-            height={800}
+            height={620}
             options={this.chartOptions}
           />
       </div>

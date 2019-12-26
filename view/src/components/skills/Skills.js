@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
 import Frontend from './Frontend';
 import Backend from './Backend';
-
+import handleViewport from 'react-in-viewport';
 
 import './Skills.css';
-
 
 class Skills extends Component {
 
@@ -13,12 +12,13 @@ class Skills extends Component {
       <div className= "Skills-container">
         <p className = "Skills-name">Skills and Qualifications</p>
         <div className = "Skills-radarContainer">
-          <Frontend/>
-          <Backend/>
+          {this.props.inViewport ? <Frontend/> : null}
+          {this.props.inViewport ? <Backend/> : null}
         </div>
       </div>
     )
   }
 }
 
-export default Skills;
+const mySkills = handleViewport(Skills);
+export default mySkills;
