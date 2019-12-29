@@ -1,5 +1,7 @@
 .DownArrow-container {
   text-align:center;
+  cursor: pointer;	
+
 }
 
 .DownArrow-image {

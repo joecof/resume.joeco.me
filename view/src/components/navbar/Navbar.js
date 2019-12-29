@@ -6,6 +6,7 @@ import linkedin from '../../images/linkedin.png';
 import facebook from '../../images/facebook.png'; 
 import gmail from '../../images/gmail.png'; 
 import resume from '../../images/resume.png'; 
+import resumeText from '../../text/joeco-fong-resume.pdf'; 
 
 
 import AppBar from '@material-ui/core/AppBar';
@@ -23,9 +24,12 @@ const styles = theme => ({
     flexDirection: 'column', 
     justifyContent: 'center',
   },
+  
   title: {
     color: 'black',
     display: 'block',
+    fontFamily: 'Montserrat',
+    fontStyle:'sans-serif'
   }, 
   NavbarIcons: {
     display: 'flex',
@@ -85,8 +89,8 @@ class Navbar extends Component {
           <div className = {classes.NavbarIcons}> 
             <a href="https://github.com/joecof"><img className= "Navbar-github" src={github} alt="github" /></a>
             <a href="https://www.linkedin.com/feed/"><img className= "Navbar-linkedin" src={linkedin} alt="linkedin" /></a>
-            <a > <img className = "Navbar-resume" src = {resume} alt="resume" onClick = {this.props.growEvent}/> </a>
-            <a > <img className = "Navbar-gmail" src = {gmail} alt="gmail"/> </a>
+            <a href={resumeText} download> <img className = "Navbar-resume" src = {resume} alt="resume"/> </a>
+            <a href="mailto:joecofg@gmail.com.com" target="_top"> <img className = "Navbar-gmail" src = {gmail} alt="gmail"/> </a>
             <a > <img className = "Navbar-facebook" src= {facebook} alt ="facebook"/> </a>
           </div>
           <Fade in={true}>
@@ -104,8 +108,8 @@ class Navbar extends Component {
           <div className = {classes.NavbarIcons}> 
             <a href="https://github.com/joecof"><img className= "Navbar-github" src={github} alt="github" /></a>
             <a href="https://www.linkedin.com/feed/"><img className= "Navbar-linkedin" src={linkedin} alt="linkedin" /></a>
-            <a > <img className = "Navbar-resume" src = {resume} alt="resume" onClick = {this.props.growEvent}/> </a>
-            <a > <img className = "Navbar-gmail" src = {gmail} alt="gmail"/> </a>
+            <a href={resumeText} download> <img className = "Navbar-resume" src = {resume} alt="resume"/> </a>
+            <a href="mailto:joecofg@gmail.com.com?Subject=Resume%20Inquiry&amp;body=Hi%20Joeco%20!%0A%0AHow%20are%20you%20?" target="_top"> <img className = "Navbar-gmail" src = {gmail} alt="gmail"/> </a>
             <a > <img className = "Navbar-facebook" src= {facebook} alt ="facebook"/> </a>
           </div>
           <Fade out={true}>

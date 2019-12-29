@@ -10,27 +10,44 @@ const styles = theme => ({
   paper: {
     margin: theme.spacing(1),
   },
+  nameTitle: {
+    fontWeight: 'bold',
+    fontSize: '37pt',
+    letterSpacing: '2px',
+  },
   title: {
     color: 'black',
     display: 'block',
+    fontSize: '12pt',
+    letterSpacing: '2px',
   }, 
   label: {
     color: 'black',
     display: 'block',
     backgroundColor: '#E0E0E0',
-    marginBottom: '10px'
+    marginBottom: '10px',
+    fontWeight: 'bold',
+    fontSize: '12pt',
+    letterSpacing: '2px',
   }, 
   education: {
-    textAlign: 'left'
+    textAlign: 'left',
+    fontSize: '12pt',
+    letterSpacing: '2px',
   }, 
   projects: {
-    textAlign: 'left'
+    textAlign: 'left',
+    fontSize: '12pt',
+    letterSpacing: '2px',
   }, 
   experience: {
-    textAlign: 'left'
+    textAlign: 'left',
+    fontSize: '12pt',
+    letterSpacing: '2px',
   }, 
   date: {
-    float:'right'
+    float:'right',
+    fontSize: '12pt',
   }
 });
 
@@ -43,7 +60,7 @@ class PaperResume extends Component {
       <div className = "Paper-container">
         <img className = "Paper-close" src= {close} alt ="close" onClick = {this.props.growEvent} />
         <div className = "Paper-Header">
-          <Typography variant="h4" className={classes.title} >
+          <Typography variant="h4" className={classes.nameTitle} >
             JOECO FONG
           </Typography>
           <Typography variant="h8" className={classes.title}>
@@ -53,7 +70,7 @@ class PaperResume extends Component {
             <a href="https://github.com/joecof">https://github.com/joecof </a>
           </Typography>
         </div>
-        <Typography variant="h6" className={classes.label}>
+        <Typography variant="h6" className={classes.label} >
           SKILLS AND QUALIFICATIONS
         </Typography>
         <div className = "Paper-skills">
@@ -96,7 +113,7 @@ class PaperResume extends Component {
         </div>
         
         <Typography variant="h6" className={classes.label}>
-          PROJECT
+          PROJECTS
         </Typography>
       <div className = "Paper-projects">
         <Typography variant="h6" className={classes.projects}>

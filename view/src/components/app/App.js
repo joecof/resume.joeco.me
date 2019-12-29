@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
 import { withRouter } from "react-router-dom";
 import Resume from '../resume/Resume';
-import Contact from '../contact/Contact';
+import ContactSection from '../contact/ContactSection';
+import Footer from '../footer/Footer';
 
-import icon from '../../images/icon.png'; 
-import download from '../../images/download.png'; 
-
-
+import resumeText from '../../text/joeco-fong-resume.pdf'; 
+import floppy from '../../images/floppy-disk.png'; 
 import Snackbar from '@material-ui/core/Snackbar';
+import IconButton from '@material-ui/core/IconButton';
+import CloseIcon from '@material-ui/icons/Close';
 
 import './App.css';
 
@@ -17,10 +18,12 @@ class App extends Component {
     super(props); 
 
     this.state = ({
-      download: true
+      download: true,
+      closed: false
     })
 
     this.listenScrollEvent = this.listenScrollEvent.bind(this);
+    this.handleClose = this.handleClose.bind(this);
 
   }
 
@@ -28,43 +31,68 @@ class App extends Component {
     window.addEventListener('scroll', this.listenScrollEvent);
 
     this.setState({
-      download: false
+      download: false, 
+      closed: false
     })
   }
   componentWillUnmount() {
     window.removeEventListener('scroll', this.listenScrollEvent);
-
   }
 
   listenScrollEvent() {
-
     const distanceY = window.pageYOffset;
 
     if (distanceY >= 150) {
       this.setState({
-        download: true
+        download: true,
       })
-    } else {
+    } else if (distanceY <= 150) {
       this.setState({
-        download: false
+        download: false,
+        closed: false
       })
     }
   }
 
-  handleClose() {
+  handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
 
-  }
+    this.setState({
+      download: false,
+      closed: true
+    })
+  };
 
   render() {
     return(
       <div className="App">
         <Resume/>
-        <Contact/>
-        <Snackbar
-        anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
-        open={this.state.download}
-        message={<span className="message-id"> <img className = "App-download" src= {download} alt ="download"/> Download My Resume </span>}
-      />
+        <ContactSection/>
+
+        {
+          this.state.closed ?
+            null
+            :
+            <Snackbar
+              anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
+              open={this.state.download}
+              onClose={this.handleClose}
+              message={<a className = "App-pdf" href={resumeText} download><span className="message-id"> <img className = "App-download" src= {floppy} alt ="download"/> SAVE RESUME </span></a>}
+              action={[
+              <IconButton
+                key="close"
+                aria-label="close"
+                color="inherit"
+                onClick={this.handleClose}
+              >
+                <CloseIcon />
+              </IconButton>,
+            ]}
+            />
+        }
+        <Footer/>
       </div>
     )
   }

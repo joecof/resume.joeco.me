@@ -7,11 +7,13 @@ import './Contact.css';
 
 const useStyles = makeStyles(theme => ({
   container: {
-    margin: "0 auto",
-    padding: '30px',
+    display: "flex",
+    width: "45%",
+    height: "100%",
+    justifyContent: "center",
+    flexDirection: "column",
     borderTop: "1px solid lightgray",
-    width: "1000px",
-    marginTop: "100px"
+    borderBottom: "1px solid lightgray"
   },
   textField: {
     marginLeft: theme.spacing(1),
@@ -64,10 +66,6 @@ const useStyles = makeStyles(theme => ({
       backgroundColor: "rgba(144, 144, 144, 0.075)",
       boxShadow: "none"
     }
-  },
-  title: {
-    textAlign: 'center',
-    fontSize: '22pt'
   }
 }));
 
@@ -85,7 +83,6 @@ export default function Contact() {
 
   return (
     <form className={classes.container} noValidate autoComplete="off">
-      <p className = {classes.title}>Send Me an Email</p>
       <div className={classes.nameEmailContainer}>
         <TextField
           id="outlined-name"

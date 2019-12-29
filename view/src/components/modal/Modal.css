@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 .Modal-container {
   text-align:center;
-  min-height: 20vh;
+  min-height: 18vh;
+
 }
 
 .Modal-button {
@@ -8,6 +11,7 @@
 }
 
 .Modal-text {
-  font-size: 20pt;
+  font-size: 22pt;
   padding:5px;
+  font-family: 'Montserrat', sans-serif;
 }

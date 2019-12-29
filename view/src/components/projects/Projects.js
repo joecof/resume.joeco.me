@@ -7,6 +7,7 @@ import operationRegen from '../../images/operation-regen.png';
 import coachable from '../../images/coachable.png';
 import bookapp from '../../images/bookapp.png';
 import chatApp from '../../images/chatapp.png';
+import joecome from '../../images/joecome.png';
 
 
 class Projects extends Component {
@@ -14,11 +15,11 @@ class Projects extends Component {
   render() {
     return(
       <div className="Projects-container">
-        <p className="Projects-name"> Projects </p>
+        {/* <p className="Projects-name"> Projects </p> */}
         <Project 
           title = "Tempify"
           image = {tempify}
-          description = "A web application to connect temps with offices."
+          description = "A Vancouver based web application that connect temp workers with offices"
           repoLink = "https://github.com/joecof/Tempify"
           url = "https://tempify-v2.herokuapp.com/"
         /> 
@@ -37,21 +38,26 @@ class Projects extends Component {
           url = "https://coachable-2e83b.firebaseapp.com/"
         /> 
         <Project 
+          title = "Joeco.me"
+          image = {joecome}
+          description = "A web application deployed with amazon ec2, nginx, and pm2"
+          repoLink = "https://github.com/joecof/joeco.me"
+          url = "https://www.joeco.me/"
+        /> 
+        <Project 
           title = "BookApp"
           image = {bookapp}
-          description = "An android application that books for recreational activities"
+          description = "An android application that books for recreational activities in the city of Surrey"
           repoLink = "https://github.com/joecof/BookApp.git"
           url = "/"
         /> 
         <Project 
-          title = "Chat-app"
+          title = "ChatApp"
           image = {chatApp}
-          description = "A web application using socket.io to imitate slack"
+          description = "A web application using socket.io to imitate the popular slack message application"
           repoLink = "https://github.com/joecof/chat-app.git"
           url = "/"
-        /> 
-
-        
+        />     
       </div>
     )
   }

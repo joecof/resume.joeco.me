@@ -18,7 +18,7 @@ class Resume extends Component {
 
     this.state = ({
       grow: false, 
-      header: false
+      clicked: false,
     })
 
     this.handleClick = this.handleClick.bind(this);
@@ -27,17 +27,15 @@ class Resume extends Component {
   componentDidMount() {
     this.setState({
       grow: false,
-      header: false
+      clicked: false,
     })
   }
 
   handleClick = () => {
     this.setState({
       grow: !this.state.grow,
-      header: !this.state.header
+      clicked: !this.state.clicked,
     })
-
-    console.log(this.state.grow);
   }
 
   render() {
@@ -53,22 +51,30 @@ class Resume extends Component {
               <div>
                 <PaperResume 
                   growEvent = {this.handleClick}
-                />
+                />              
               </div>
             </Grow>
            : 
-            <Header/>
+           <Header/>
         }
         {
-          this.state.grow ?    
+          this.state.grow && this.state.clicked ?    
             null
             :
-            <Modal 
-              growEvent = {this.handleClick}
-              grow = {this.state.grow}
-            /> 
+            (<Link to="null" onClick={() => scroll.scrollTo(0, {duration: 500})} > 
+              <Modal 
+                growEvent = {this.handleClick}
+                grow = {this.state.grow}
+              /> 
+            </Link>)
         } 
-        <Link to="null" onClick={() => scroll.scrollTo(880)} > <DownArrow/></Link>
+
+        {
+          this.state.grow ? 
+            <Link to="null" onClick={() => scroll.scrollTo(1700)} > <DownArrow/></Link>
+            :
+            <Link to="null" onClick={() => scroll.scrollTo(850)} > <DownArrow/></Link>
+        }
         <Projects/>
       </div>
     )
