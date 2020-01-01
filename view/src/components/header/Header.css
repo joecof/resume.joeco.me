@@ -11,6 +11,7 @@
 .Header-name {
   font-size: 80pt;
   padding-top:300px;
+  
 }
 
 .Header-contact {
@@ -24,13 +25,13 @@
 
 .Header-tick {
   width:10px;
+  margin-left: 5px;
 }
 
 .Header-desc1 {
   font-size: 12pt;
   color: gray;
   margin-top:40px;
-  text-decoration: line-through;
 }
 
 .Header-desc2 {

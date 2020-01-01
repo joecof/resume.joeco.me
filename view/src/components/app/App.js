@@ -70,27 +70,28 @@ class App extends Component {
       <div className="App">
         <Resume/>
         <ContactSection/>
-
         {
           this.state.closed ?
             null
             :
-            <Snackbar
-              anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
-              open={this.state.download}
-              onClose={this.handleClose}
-              message={<a className = "App-pdf" href={resumeText} download><span className="message-id"> <img className = "App-download" src= {floppy} alt ="download"/> SAVE RESUME </span></a>}
-              action={[
-              <IconButton
-                key="close"
-                aria-label="close"
-                color="inherit"
-                onClick={this.handleClose}
-              >
-                <CloseIcon />
-              </IconButton>,
-            ]}
-            />
+              <Snackbar
+                anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
+                open={this.state.download}
+                className="App-snackbar"
+                onClose={this.handleClose}
+                message={<a className = "App-pdf" href={resumeText} download><span className="message-id"> <img className = "App-download" src= {floppy} alt ="download"/> SAVE RESUME </span></a>}
+                action={[
+                <IconButton
+                  key="close"
+                  aria-label="close"
+                  color="inherit"
+                  onClick={this.handleClose}
+                >
+                  <CloseIcon />
+                </IconButton>,
+              ]}
+              />
+              
         }
         <Footer/>
       </div>

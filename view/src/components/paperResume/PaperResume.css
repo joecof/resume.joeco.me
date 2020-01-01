@@ -1,6 +1,6 @@
 .Paper-container {
   margin:0 auto;
-  width: 80%;
+  width: 90%;
   padding-top:200px;
   text-align: center;
   margin-bottom:100px;
@@ -20,33 +20,6 @@
 
 .Paper-skills li {
   padding: 7px;
-}
-
-.Paper-education {
-  text-align: left;
-}
-
-.Paper-education li {
-  padding: 7px;
-  margin-left: 170px;
-}
-
-.Paper-projects {
-  text-align: left;
-}
-
-.Paper-projects li {
-  padding: 7px;
-  margin-left: 170px;
-}
-
-.Paper-experience {
-  text-align: left;
-}
-
-.Paper-experience li {
-  padding: 7px;
-  margin-left: 170px;
 }
 
 .Paper-hobbies {

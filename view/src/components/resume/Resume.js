@@ -46,34 +46,34 @@ class Resume extends Component {
           grow = {this.state.grow}
         />
         {
-          this.state.grow ?     
-            <Grow in = {this.state.grow}>
+          this.state.grow ?  
+            <Grow in = {true}>
               <div>
-                <PaperResume 
-                  growEvent = {this.handleClick}
-                />              
-              </div>
-            </Grow>
+              <Header/>
+              </div> 
+            </Grow>   
            : 
-           <Header/>
+            <PaperResume 
+              growEvent = {this.handleClick}
+            />     
         }
         {
           this.state.grow && this.state.clicked ?    
-            null
-            :
             (<Link to="null" onClick={() => scroll.scrollTo(0, {duration: 500})} > 
               <Modal 
                 growEvent = {this.handleClick}
                 grow = {this.state.grow}
               /> 
             </Link>)
+            :
+            null
         } 
 
         {
           this.state.grow ? 
-            <Link to="null" onClick={() => scroll.scrollTo(1700)} > <DownArrow/></Link>
-            :
             <Link to="null" onClick={() => scroll.scrollTo(850)} > <DownArrow/></Link>
+            :
+            <Link to="null" onClick={() => scroll.scrollTo(1700)} > <DownArrow/></Link>
         }
         <Projects/>
       </div>

@@ -49,10 +49,12 @@ class Header extends Component {
           </div>
           <p className = "Header-contact"> (778) 883 6220 – joecofg@gmail.com</p>
           <a className = "Header-github" href="https://github.com/joecof">https://github.com/joecof</a>
-
-          <p className = "Header-desc1"> Engineer <br/> Developer </p>
-          <span className = "Header-desc2"> Problem Solver.</span>
-          <img src = {tick} className = "Header-tick"></img>
+          <p className = "Header-desc1"> Engineer <img src = {tick} className = "Header-tick"></img> 
+            <br/>
+            <br/> Developer<img src = {tick} className = "Header-tick"></img>
+            <br/>
+            <br/> Problem Solver<img src = {tick} className = "Header-tick"></img>
+          </p>
 
         </Collapse>
       </div>

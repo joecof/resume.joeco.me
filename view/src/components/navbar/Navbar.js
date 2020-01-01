@@ -91,7 +91,6 @@ class Navbar extends Component {
             <a href="https://www.linkedin.com/feed/"><img className= "Navbar-linkedin" src={linkedin} alt="linkedin" /></a>
             <a href={resumeText} download> <img className = "Navbar-resume" src = {resume} alt="resume"/> </a>
             <a href="mailto:joecofg@gmail.com.com" target="_top"> <img className = "Navbar-gmail" src = {gmail} alt="gmail"/> </a>
-            <a > <img className = "Navbar-facebook" src= {facebook} alt ="facebook"/> </a>
           </div>
           <Fade in={true}>
           <div className = {classes.NavBarTextContainer}>
@@ -110,7 +109,6 @@ class Navbar extends Component {
             <a href="https://www.linkedin.com/feed/"><img className= "Navbar-linkedin" src={linkedin} alt="linkedin" /></a>
             <a href={resumeText} download> <img className = "Navbar-resume" src = {resume} alt="resume"/> </a>
             <a href="mailto:joecofg@gmail.com.com?Subject=Resume%20Inquiry&amp;body=Hi%20Joeco%20!%0A%0AHow%20are%20you%20?" target="_top"> <img className = "Navbar-gmail" src = {gmail} alt="gmail"/> </a>
-            <a > <img className = "Navbar-facebook" src= {facebook} alt ="facebook"/> </a>
           </div>
           <Fade out={true}>
           <div className = {classes.NavBarTextContainer}>

@@ -1,14 +1,31 @@
 .Skills-container {
-  margin-top:100px;
-  text-align:center;
+  height:100vh;
+  background-color: #2E3133 !important;
+  position: relative;
 
 }
 
-.Skills-name {
-  font-size: 45pt;
+
+
+.Skills-button {
+  border: 1x solid white !important;
+  color:white !important;
 }
 
-.Skills-radarContainer {
-  display:flex;
-  flex-direction: row;
+.Skills-text1 {
+  font-size: 12pt;
+  font-family: 'Montserrat', sans-serif;  
+}
+
+.Skills-text1:hover {
+  color: lightgreen !important; 
+}
+
+.Skills-text2 {
+  font-size: 12pt;
+  font-family: 'Montserrat', sans-serif;  
+}
+
+.Skills-text2:hover {
+  color: lightgreen !important; 
 }

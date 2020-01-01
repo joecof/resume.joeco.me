@@ -24,7 +24,7 @@ class Modal extends Component {
     return(
       <div className = "Modal-container">
         <Button className = "Modal-button" onClick = {this.props.growEvent}> 
-          <span className = "Modal-text"> View Resume </span>
+          <span className = "Modal-text"> Checkout My Resume </span>
         </Button>
 
       </div>
