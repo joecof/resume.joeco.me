@@ -46,8 +46,22 @@ class Projects extends Component {
     
     return(
       <div className="Projects-container">
-        <p className="Projects-name"> Projects </p>
-
+        {/* <p className="Projects-name"> Projects </p> */}
+        <Project 
+          title = "Joeco.me"
+          image = {joecome}
+          description = "A web application using react, node, express, and deployed with amazon ec2, nginx, and pm2"
+          repoLink = "https://github.com/joecof/joeco.me"
+          url = "https://www.joeco.me/"
+          react = { <Chip avatar={<Avatar alt="react" src= {react} />} label="React" color="primary" className = {classes.chips}/>}
+          materialui = {<Chip avatar={<Avatar alt="materialui" src= {materialui} />} label="Material UI" color="primary" className = {classes.chips}/>}
+          node = {<Chip avatar={<Avatar alt="node" src= {node} />} label="Node js" color="secondary" className = {classes.chips}/>}
+          nodemailer = {<Chip avatar={<Avatar alt="nodemailer" src= {nodemailer} />} label="Nodemailer" color="secondary" className = {classes.chips}/>}
+          nginx = {<Chip avatar={<Avatar alt="NGINX" src= {nginx} />} label="NGINX" color="default" className = {classes.chips}/>}
+          express = {<Chip avatar={<Avatar alt="Express" src= {express} />} label="Express js" color="secondary" className = {classes.chips}/>}
+          amazon = {<Chip avatar={<Avatar alt="AmazonEC2" src= {amazon} />} label="Amazon EC2" color="default" className = {classes.chips}/>}
+          pm2 = {<Chip avatar={<Avatar alt="pm2" src= {pm2} />} label="PM2" color="default" className = {classes.chips}/>}
+        /> 
         <Project 
           title = "Tempify"
           image = {tempify}
@@ -75,21 +89,6 @@ class Projects extends Component {
           express = {<Chip avatar={<Avatar alt="Express" src= {express} />} label="Express js" color="secondary" className = {classes.chips}/>}
           mysql = {<Chip avatar={<Avatar alt="mysql" src= {mysql} />} label="MySql" color="secondary" className = {classes.chips}/>}
           heroku = {<Chip avatar={<Avatar alt="heroku" src= {heroku} />} label="Heroku" color="default" className = {classes.chips}/>}
-        /> 
-         <Project 
-          title = "Joeco.me"
-          image = {joecome}
-          description = "A web application using react, node, express, and deployed with amazon ec2, nginx, and pm2"
-          repoLink = "https://github.com/joecof/joeco.me"
-          url = "https://www.joeco.me/"
-          react = { <Chip avatar={<Avatar alt="react" src= {react} />} label="React" color="primary" className = {classes.chips}/>}
-          materialui = {<Chip avatar={<Avatar alt="materialui" src= {materialui} />} label="Material UI" color="primary" className = {classes.chips}/>}
-          node = {<Chip avatar={<Avatar alt="node" src= {node} />} label="Node js" color="secondary" className = {classes.chips}/>}
-          nodemailer = {<Chip avatar={<Avatar alt="nodemailer" src= {nodemailer} />} label="Nodemailer" color="secondary" className = {classes.chips}/>}
-          nginx = {<Chip avatar={<Avatar alt="NGINX" src= {nginx} />} label="NGINX" color="default" className = {classes.chips}/>}
-          express = {<Chip avatar={<Avatar alt="Express" src= {express} />} label="Express js" color="secondary" className = {classes.chips}/>}
-          amazon = {<Chip avatar={<Avatar alt="AmazonEC2" src= {amazon} />} label="Amazon EC2" color="default" className = {classes.chips}/>}
-          pm2 = {<Chip avatar={<Avatar alt="pm2" src= {pm2} />} label="PM2" color="default" className = {classes.chips}/>}
         /> 
         <Project 
           title = "Coachable"

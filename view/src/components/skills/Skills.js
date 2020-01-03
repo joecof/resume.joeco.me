@@ -50,9 +50,6 @@ class Skills extends Component {
   constructor(props) {
     super(props); 
 
-    this.state= ({
-      
-    })
   }
   
   render() {
@@ -98,7 +95,7 @@ class Skills extends Component {
             <span className = "Skills-text1"> See it Online </span>
           </Button>
           <Button target = "blank" href = {this.props.url} className = {classes.button} variant = "outlined" onClick = {this.props.growEvent}> 
-            <span className = "Skills-text2"> Vist Github Repo </span>
+            <span className = "Skills-text2"> View Source Code </span>
           </Button>
         </div>
       </div>

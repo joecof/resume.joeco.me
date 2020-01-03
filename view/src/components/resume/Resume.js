@@ -73,9 +73,15 @@ class Resume extends Component {
           this.state.grow ? 
             <Link to="null" onClick={() => scroll.scrollTo(850)} > <DownArrow/></Link>
             :
-            <Link to="null" onClick={() => scroll.scrollTo(1700)} > <DownArrow/></Link>
+            null
         }
-        <Projects/>
+
+        {
+          this.state.grow ? 
+            <Projects/>
+            :
+            null
+        }
       </div>
     )
   }

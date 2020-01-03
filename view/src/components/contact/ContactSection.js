@@ -9,7 +9,7 @@ const useStyles = makeStyles(theme => ({
     height: "400px",
     display: "flex",
     alignItems: "center",
-    marginTop: '100px'
+    marginTop: '60px'
   }
 }));
 

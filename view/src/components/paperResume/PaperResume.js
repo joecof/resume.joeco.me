@@ -6,6 +6,7 @@ import PaperProject from './PaperProject'
 import PaperEducation from './PaperEducation'
 import PaperSkills from './PaperSkills'
 import PaperContact from './PaperContact'
+import Projects from '../projects/Projects';
 
 
 import './PaperResume.css';
@@ -72,10 +73,14 @@ class PaperResume extends Component {
           SKILLS AND QUALIFICATIONS
         </Typography>
         <PaperSkills 
-          d1 = "Java, HTML5, CSS3, JavaScript, jQuery, JSON, AJAX, SQL, Git, Node.js, Bash command-line, C"
-          d2 = "Built several responsive web applications using multiple programming languages and technologies."
-          d3 = "Tested different programs manually and in JUnit."
-          d4 = "Client-focused communicator through group projects and work experience"
+          title1 = "LANGUAGES"
+          title2 = "FRONTEND FRAMEWORKS"
+          title3 = "FRAMEWORKS/LIBRARIES"
+          title4 = "DEVOPS/SYSADMIN"
+          d1 = " C++, Java, JavaScript, C, MySQL, NoSQL, Mongoose"
+          d2 = "React.js, Material UI, Bootstrap, PrimeFaces, JavaServer Faces"
+          d3 = "Node.js, JWT.io, Express.js, Socket.io, Phaser.js, Java Persistence API"
+          d4 = "Heroku, Amazon EC2, Dockers, PM2, NGINX, Firebase, WildFly/JBoss, Maven"
         />
         <Typography variant="h6" className={classes.label}>
           EXPERIENCE
@@ -83,19 +88,19 @@ class PaperResume extends Component {
         <div className = "Paper-projects">
           <PaperProject 
             title = "joeco.me "
-            date = "September – December 2018"
+            date = "December 2019 – January 2020"
             url = "https://www.joeco.me/"
-            d1 = "Object Orientated Programming (Java), Procedural Programming, Relational Database Methods &amp; Applications, Web Development, Discrete Mathematics, Business Communications"
-            d2 = "Collaborated with a team of 3 using Git to track changes throughout the project life cycle."
-            d3 = "Used Agile/Scrum methodologies framework to organize tasks and keep members accountable."
-            d4 = "Presented the project to 20 peers regarding the application, process, and overall goal of the web application."
+            d1 = "Deployed with Amazon EC2, NGINX, and PM2"
+            d2 = "SSL Certified using NGINX with Let's Encrypt"
+            d3 = "Uses React.js with Material UI components to build frontend"
+            d4 = "Uses Nodemailer to send emails out of React Component."
           />
           <PaperProject 
             title = "Tempify"
             date = "September – December 2019"
             url = "https://tempify-v2.herokuapp.com/"
-            d1 = "Object Orientated Programming (Java), Procedural Programming, Relational Database Methods &amp; Applications, Web Development, Discrete Mathematics, Business Communications"
-            d2 = "Collaborated with a team of 3 using Git to track changes throughout the project life cycle."
+            d1 = "Deployed with Heroku with MySQL ClearDB"
+            d2 = "Uses React.js with Material UI components to build frontend"
             d3 = "Used Agile/Scrum methodologies framework to organize tasks and keep members accountable."
             d4 = "Presented the project to 20 peers regarding the application, process, and overall goal of the web application."
           />
@@ -109,18 +114,18 @@ class PaperResume extends Component {
             d4 = "Presented the project to 20 peers regarding the application, process, and overall goal of the web application."
           />
           <PaperProject 
-            title = "Coachable"
-            date = "April – May 2019"
-            url = "https://coachable-2e83b.firebaseapp.com/"
+            title = "BookApp"
+            date = "September – December 2019"
+            url = "https://appetize.io/app/pwv2aknnphf9y6mep9xkzx8azw"
             d1 = "Object Orientated Programming (Java), Procedural Programming, Relational Database Methods &amp; Applications, Web Development, Discrete Mathematics, Business Communications"
             d2 = "Collaborated with a team of 3 using Git to track changes throughout the project life cycle."
             d3 = "Used Agile/Scrum methodologies framework to organize tasks and keep members accountable."
             d4 = "Presented the project to 20 peers regarding the application, process, and overall goal of the web application."
           />
           <PaperProject 
-            title = "BookApp"
+            title = "Coachable"
             date = "September – December 2018"
-            url = "https://github.com/joecof/BookApp"
+            url = "https://coachable-2e83b.firebaseapp.com/"
             d1 = "Object Orientated Programming (Java), Procedural Programming, Relational Database Methods &amp; Applications, Web Development, Discrete Mathematics, Business Communications"
             d2 = "Collaborated with a team of 3 using Git to track changes throughout the project life cycle."
             d3 = "Used Agile/Scrum methodologies framework to organize tasks and keep members accountable."
@@ -137,10 +142,16 @@ class PaperResume extends Component {
             d1 = "Object Orientated Programming (Java), Procedural Programming, Relational Database Methods &amp; Applications, Web Development, Discrete Mathematics, Business Communications"
           />
           <PaperEducation
-            title = "BACHELOR OF ARTS – HEALTH SCIENCS SFU, BURNABY"
+            title = "DEGREE – HEALTH SCIENCES SFU, BURNABY"
             date = "2010 – 2016"
             d1 = "Biostatistics, Health Informatics, Biology, Kinesiology, Epidemiology"
           />
+        </div>
+        <div>
+          <Typography variant="h6" className={classes.label}>
+            Projects
+          </Typography>
+          <Projects/>
         </div>
       </div>
     )

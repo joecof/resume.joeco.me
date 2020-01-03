@@ -33,7 +33,7 @@ export default function() {
   return (
     <div className={classes.outerContainer}>
       <div className={classes.copyrightMessage}>
-        © Joeco Fong - Full Stack Developer - All rights reserved. @2019.
+        © Joeco Fong - Full Stack Developer - All rights reserved. @2020.
       </div>
     </div>
   );

@@ -79,7 +79,7 @@ class App extends Component {
                 open={this.state.download}
                 className="App-snackbar"
                 onClose={this.handleClose}
-                message={<a className = "App-pdf" href={resumeText} download><span className="message-id"> <img className = "App-download" src= {floppy} alt ="download"/> SAVE RESUME </span></a>}
+                message={<a className = "App-pdf" href={resumeText} download><span className="message-id"> <img className = "App-download" src= {floppy} alt ="download"/> SAVE MY RESUME </span></a>}
                 action={[
                 <IconButton
                   key="close"
@@ -91,7 +91,6 @@ class App extends Component {
                 </IconButton>,
               ]}
               />
-              
         }
         <Footer/>
       </div>
