@@ -6,7 +6,7 @@ import { Typography } from "@material-ui/core";
 const useStyles = makeStyles(theme => ({
   outerContainer: {
     width: "100%",
-    height: "100px",
+    height: "60px",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",

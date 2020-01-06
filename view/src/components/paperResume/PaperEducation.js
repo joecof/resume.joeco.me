@@ -32,11 +32,7 @@ class PaperEducation extends Component {
         <Typography variant="h6" className={classes.education}>
            {this.props.title} <span className = {classes.date}> {this.props.date} </span>
           </Typography>
-          <ul>
-            <li>
-              {this.props.d1}          
-            </li>
-          </ul>
+        <br/>
       </div>
     )
   }
