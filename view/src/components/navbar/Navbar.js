@@ -1,19 +1,13 @@
 import React, {Component} from 'react';
 import { withStyles } from '@material-ui/core/styles';
-
 import github from '../../images/github-logo.png'; 
 import linkedin from '../../images/linkedin.png'; 
-import facebook from '../../images/facebook.png'; 
 import gmail from '../../images/gmail.png'; 
 import resume from '../../images/resume.png'; 
 import resumeText from '../../text/joeco-fong-resume.pdf'; 
-
-
 import AppBar from '@material-ui/core/AppBar';
 import Typography from '@material-ui/core/Typography';
 import Fade from '@material-ui/core/Fade';
-
-
 import './Navbar.css';
 
 const styles = theme => ({  

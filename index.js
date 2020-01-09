@@ -3,6 +3,7 @@ const app = express();
 const helmet = require('helmet');
 const path = require('path');
 const bodyParser = require('body-parser');
+const routes = require('./routes/routes');
 
 app.use(helmet());
 app.use(bodyParser.urlencoded({
@@ -21,15 +22,15 @@ app.use((req, res, next) => {
   next();
 })
 
-// **************************************************************************** //
+app.use('/client', routes);
 
 // *************************************************************** //
 //                    Serving Build File                       //  
 
-  app.use(express.static(path.join(__dirname, './client')));
-  app.get('*', (req, res) => {
-    res.sendfile(path.join(__dirname = './client/index.html'));
-  });
+app.use(express.static(path.join(__dirname, './client')));
+app.get('*', (req, res) => {
+  res.sendfile(path.join(__dirname = './client/index.html'));
+});
 
 app.listen(process.env.PORT || 3001, () => {
   console.log('listening on port 3001');

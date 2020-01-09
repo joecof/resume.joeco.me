@@ -27,9 +27,6 @@ const styles = theme => ({
 
 class PaperSkills extends Component {
 
-  constructor(props) {
-    super(props);
-  }
   render() {
     const { classes } = this.props;
     return (

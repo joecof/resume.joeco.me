@@ -23,9 +23,6 @@ const styles = theme => ({
 
 class PaperContact extends Component {
 
-  constructor(props) {
-    super(props);
-  }
   render() {
     const { classes } = this.props;
 

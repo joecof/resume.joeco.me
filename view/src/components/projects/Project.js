@@ -70,7 +70,7 @@ class Project extends Component {
         <Card className={classes.card} elevation = {2} >
           <CardActionArea 
             className= {classes.mediaContainer}
-            className="img__wrap"
+            // className="img__wrap"
             onMouseEnter = {this.flipCardSkills}
             onMouseLeave = {this.flipCardProject}
             >

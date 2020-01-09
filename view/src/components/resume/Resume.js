@@ -1,11 +1,8 @@
 import React, {Component} from 'react';
 import Navbar from '../navbar/Navbar';
 import Header from '../header/Header';
-import DownArrow from '../downArrow/DownArrow';
-import Projects from '../projects/Projects';
 import Modal from '../modal/Modal';
 import PaperResume from '../paperResume/PaperResume';
-
 import { Link, animateScroll as scroll } from "react-scroll";
 import Grow from '@material-ui/core/Grow';
 
