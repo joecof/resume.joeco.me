@@ -3,7 +3,6 @@ const app = express();
 const helmet = require('helmet');
 const path = require('path');
 const bodyParser = require('body-parser');
-const routes = require('./routes/routes');
 
 app.use(helmet());
 app.use(bodyParser.urlencoded({
@@ -26,7 +25,6 @@ app.use((req, res, next) => {
 // *************************************************************** //
 //                    Serving Build File                       //  
 
-app.use('/client', routes);
 
 app.use(express.static(path.join(__dirname, './client')));
 app.get('*', (req, res) => {

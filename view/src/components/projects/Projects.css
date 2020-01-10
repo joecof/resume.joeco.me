@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+.Projects-container {
+  /* margin-bottom: 350px; */
+  /* min-height: 80vh; */
+  /* background-color: #f2f2f2; */
+  padding: 20px 0 0px 0;
+  margin: 100px 0 0 0;
+  max-width: 95%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.Projects-name {
+  font-size: 45pt;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing:2px;
+  text-align: center;
+}

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+.App {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.App-download {
+  width: 30px;
+}
+
+.message-id {
+  font-size: 14pt;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color:white;
+  padding:30px;
+}
+
+.App-pdf {
+  text-decoration: none;
+  color:white;
+}

@@ -1,0 +1,10 @@
+.DownArrow-container {
+  text-align:center;
+  cursor: pointer;	
+  margin-bottom:50px;
+}
+
+.DownArrow-image {
+  width: 75px;
+  opacity: 0.3;
+}
