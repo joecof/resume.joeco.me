@@ -22,7 +22,7 @@ app.use((req, res, next) => {
   next();
 })
 
-app.use('/client', routes);
+// app.use('/client', routes);
 
 // *************************************************************** //
 //                    Serving Build File                       //  
