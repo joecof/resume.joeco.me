@@ -81,27 +81,6 @@ export default function Contact() {
     setValues({ ...values, [name]: event.target.value });
   };
 
-  // function sendMessageContactUs() {
-  //   fetch("/client/email", {
-  //     method: 'POST',
-  //     headers: {
-  //       'Content-Type': 'application/json'
-  //     },
-  //     body: JSON.stringify({
-  //       cuName: values.cuName,
-  //       cuEmail: values.cuEmail,
-  //       cuMessage: values.cuMessage,
-  //     })
-  //   });
-
-  //   setValues({
-  //     cuName: "",
-  //     cuEmail: "",
-  //     cuMessage: "",
-  //     setSuccessOpen: true
-  //   });
-  // }
-
   return (
     <form className={classes.container} noValidate autoComplete="off">
       <div className={classes.nameEmailContainer}>
