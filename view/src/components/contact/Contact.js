@@ -98,7 +98,6 @@ export default function Contact() {
       cuName: "",
       cuEmail: "",
       cuMessage: "",
-      setSuccessOpen: true
     });
   }
 
