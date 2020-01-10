@@ -25,6 +25,8 @@ app.use((req, res, next) => {
 // *************************************************************** //
 //                    Serving Build File                       //  
 
+app.use('/client', routes);
+
 app.use(express.static(path.join(__dirname, './client')));
 app.get('*', (req, res) => {
   res.sendfile(path.join(__dirname = './client/index.html'));
