@@ -82,7 +82,7 @@ export default function Contact() {
   };
 
   function sendMessageContactUs() {
-    fetch("http://localhost:3001/client/email", {
+    fetch("/client/email", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
