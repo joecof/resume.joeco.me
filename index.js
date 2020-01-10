@@ -3,6 +3,7 @@ const app = express();
 const helmet = require('helmet');
 const path = require('path');
 const bodyParser = require('body-parser');
+const routes = require('./routes/routes');
 
 app.use(helmet());
 app.use(bodyParser.urlencoded({
