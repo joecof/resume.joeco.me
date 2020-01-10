@@ -81,26 +81,6 @@ export default function Contact() {
     setValues({ ...values, [name]: event.target.value });
   };
 
-   function sendMessageContactUs() {
-    fetch("http://127.0.0.1:3001/client/email", {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        cuName: values.cuName,
-        cuEmail: values.cuEmail,
-        cuMessage: values.cuMessage,
-      })
-    });
-
-    setValues({
-      cuName: "",
-      cuEmail: "",
-      cuMessage: "",
-    });
-  }
-
   return (
     <form className={classes.container} noValidate autoComplete="off">
       <div className={classes.nameEmailContainer}>
@@ -137,7 +117,7 @@ export default function Contact() {
         />
       </div>
       <div className={classes.buttonContainer}>
-        <Button variant="contained" className={classes.button} onClick = {sendMessageContactUs}>        
+        <Button variant="contained" className={classes.button}>        
           Send Message
         </Button>
       </div>
