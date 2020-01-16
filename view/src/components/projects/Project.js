@@ -105,6 +105,7 @@ class Project extends Component {
                     title = {this.props.title}
                     description = {this.props.description}
                     url = {this.props.url}
+                    repoLink = {this.props.repoLink}
                     react = {this.props.react}
                     bootstrap = {this.props.bootstrap}
                     phaser = {this.props.phaser}

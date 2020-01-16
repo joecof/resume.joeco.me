@@ -87,7 +87,7 @@ class Skills extends Component {
           <Button target = "blank" href = {this.props.url} className = {classes.button} variant = "outlined" onClick = {this.props.growEvent}> 
             <span className = "Skills-text1"> See it Online </span>
           </Button>
-          <Button target = "blank" href = {this.props.url} className = {classes.button} variant = "outlined" onClick = {this.props.growEvent}> 
+          <Button target = "blank" href = {this.props.repoLink} className = {classes.button} variant = "outlined" onClick = {this.props.growEvent}> 
             <span className = "Skills-text2"> View Source Code </span>
           </Button>
         </div>
