@@ -4,6 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import github from '../../images/github-logo.png'; 
 import linkedin from '../../images/linkedin.png'; 
 import gmail from '../../images/gmail.png'; 
+import next from '../../images/next.png'; 
 
 import resume from '../../images/resume.png'; 
 import resumeText from '../../text/joeco-fong-resume.pdf'; 
@@ -20,8 +21,14 @@ const useStyles = makeStyles(theme => ({
   },
   emailUs: {
     width: "75%",
-    fontSize: "25pt",
-    fontWeight: "700"
+    fontSize: "27pt",
+    fontWeight: "700",
+    padding: '5px',
+    display: 'flex',
+    alignItems:'center',
+    justifyContent: 'center'
+
+    
   },
   emailUsMessage: {
     width: "75%",
@@ -90,7 +97,18 @@ const useStyles = makeStyles(theme => ({
   }, 
   gmailLogo: {
     paddingLeft: '10px',
+    width: '50px',
+    padding: '5px',
+    verticleAlign:'middle'
+
+  },
+  nextLogo: {
+    paddingLeft: '10px',
     width: '40px',
+    padding: '5px',
+    verticleAlign:'middle'
+
+
   },
 }));
 
@@ -99,13 +117,16 @@ export default function() {
 
   return (
     <div className={classes.contactContainer}>
-      <div className={classes.emailUs}>Email Me</div>
+      <div className={classes.emailUs}>
+        Email Me
+        <img className= {classes.nextLogo} src={next} alt="gmail" />
+        <a href="mailto:joecofg@gmail.com.com" target="_top">
+          <img className= "Navbar-gmail" src={gmail} alt="gmail" />
+        </a> 
+      </div>
       <div className={classes.emailUsMessage}>
         I would love to hear from you and work together on future projects! 
         Reach out and I'll respond as soon as I can. 
-        <a href="mailto:joecofg@gmail.com.com" target="_top">
-          <img className= {classes.gmailLogo} src={gmail} alt="gmail" />
-        </a>
       </div>
       <div className={classes.socialMedia}>
         {/* <a href="https://github.com/joecof">

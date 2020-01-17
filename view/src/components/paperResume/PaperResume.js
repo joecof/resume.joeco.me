@@ -136,7 +136,7 @@ class PaperResume extends Component {
         </p>
         <div className = "Paper-education">
           <PaperEducation
-            title = "ASSOCIATE DEGREE – COMPUTER SYSTEM TECHNOLOGY BCIT, BURNABY"
+            title = "ASSOCIATE DEGREE – COMPUTER SYSTEMS TECHNOLOGY BCIT, BURNABY"
             date = "2018 – Present"
           />
           <PaperEducation

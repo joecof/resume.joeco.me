@@ -26,8 +26,16 @@ code {
     font-size:10pt;
   }
 
+  .Paper-projects-title {
+    font-size:12pt;
+  }
+
+  .Paper-skills-title {
+    font-size:8pt;
+  }
+
   .Paper-skills li {
-    font-size:10pt;
+    font-size:8pt;
   }
 
   .Paper-projects li {
@@ -47,13 +55,16 @@ code {
     font-size:10pt;
   }
 
+  .Paper-projects-title {
+    font-size:12pt;
+  }
+
   .Paper-skills {
     margin-left:0px;
-    font-size:8pt;
   }
 
   .Paper-skills-title {
-    font-size:10pt;
+    font-size:9pt;
   }
 
   .Paper-projects li {

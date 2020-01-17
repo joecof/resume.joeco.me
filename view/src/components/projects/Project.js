@@ -13,8 +13,8 @@ import './Project.css'
 
 const styles = theme => ({  
   card: {
-    maxWidth: 445,
-    // width: 445,
+    // maxWidth: 445,
+    width: 445,
     display: 'inline-block',
     height: 400,
     borderRadius: '10px',
