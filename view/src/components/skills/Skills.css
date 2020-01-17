@@ -1,11 +1,9 @@
 .Skills-container {
   height:100vh;
+  max-width: 445px;
   background-color: #2E3133 !important;
   position: relative;
-
 }
-
-
 
 .Skills-button {
   border: 1x solid white !important;

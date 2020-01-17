@@ -65,7 +65,7 @@ class Projects extends Component {
         <Project 
           title = "Tempify"
           image = {tempify}
-          description = "A Vancouver based web application that connect temp workers with offices"
+          description = "A Vancouver based web application that connects temp workers with offices"
           repoLink = "https://github.com/joecof/Tempify"
           url = "https://tempify-v2.herokuapp.com/"
           react = { <Chip avatar={<Avatar alt="react" src= {react} />} label="React" color="primary" className = {classes.chips}/>}
@@ -79,7 +79,7 @@ class Projects extends Component {
         <Project 
           title = "Operation Regen"
           image = {operationRegen}
-          description = "A web-based game inspired by Nintendo's WarioWare"
+          description = "A web-based game inspired by Nintendo's WarioWare, created with the Phaser game engine"
           repoLink = "https://github.com/joecof/Operation-Regen"
           url = "https://operation-regen.herokuapp.com/"
           react = { <Chip avatar={<Avatar alt="react" src= {react} />} label="React" color="primary" className = {classes.chips}/>}
@@ -93,7 +93,7 @@ class Projects extends Component {
         <Project 
           title = "Coachable"
           image = {coachable}
-          description = "A web application that connects students with coaches"
+          description = "A web application that connects students with coaches modeled after the Uber business model"
           repoLink = "https://github.com/joecof/Coachable.git"
           url = "https://coachable-2e83b.firebaseapp.com/"
           bootstrap = { <Chip avatar={<Avatar alt="bootstrap" src= {bootstrap} />} label="Bootstrap" color="primary" className = {classes.chips}/>}

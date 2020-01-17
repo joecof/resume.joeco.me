@@ -24,8 +24,7 @@ const styles = theme => ({
   },
   descContainer: {
     marginTop: '15px',
-    padding: '10px'
-  
+    padding: '10px',
   },
   button: {
     border: '1px solid white',
@@ -38,7 +37,9 @@ const styles = theme => ({
     right: '10px',
     top: '300px',
     bottom: '0px'   
-
+  },
+  icon: {
+    width: '20%'
   }
 });
 
@@ -56,7 +57,7 @@ class Skills extends Component {
           {this.props.description}
         </Typography>
         <div className = {classes.descContainer}>
-          <div>
+          <div className = {classes.icons}>
             {this.props.react}
             {this.props.materialui}
             {this.props.bootstrap}
@@ -64,7 +65,7 @@ class Skills extends Component {
             {this.props.jquery}
             {this.props.xhtml}
           </div>
-          <div>
+          <div className = {classes.icons}>
             {this.props.node}
             {this.props.socketio}
             {this.props.nodemailer}
@@ -74,7 +75,7 @@ class Skills extends Component {
             {this.props.java}
             {this.props.mysql}
           </div>
-          <div>
+          <div className = {classes.icons}>
             {this.props.heroku}
             {this.props.firebase}
             {this.props.amazon}

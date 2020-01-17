@@ -10,7 +10,7 @@ const useStyles = makeStyles(theme => ({
     justifyContent: "center",
     alignItems: "center",
     borderTop: "1px solid lightgray",
-    fontSize: '1em'
+    fontSize: '0.8em'
 
   },
   container: {
