@@ -32,12 +32,6 @@ const styles = theme => ({
     marginTop:'20px',
     marginRight: '20px',
   },
-  buttonContainer: {
-    position: 'absolute',
-    right: '10px',
-    top: '300px',
-    bottom: '0px'   
-  },
   icon: {
     width: '20%'
   }
@@ -68,7 +62,7 @@ class Skills extends Component {
           <div className = {classes.icons}>
             {this.props.node}
             {this.props.socketio}
-            {this.props.nodemailer}
+            {/* {this.props.nodemailer} */}
             {this.props.express}
             {this.props.jwt}
             {this.props.firebasedb}
@@ -84,13 +78,26 @@ class Skills extends Component {
             {this.props.android}
           </div>
         </div>
-        <div className = {classes.buttonContainer}> 
-          <Button target = "blank" href = {this.props.url} className = {classes.button} variant = "outlined" onClick = {this.props.growEvent}> 
-            <span className = "Skills-text1"> See it Online </span>
-          </Button>
-          <Button target = "blank" href = {this.props.repoLink} className = {classes.button} variant = "outlined" onClick = {this.props.growEvent}> 
+        <div className = "Skills-button-container"> 
+
+          {window.innerWidth < 450 ? 
+            <div>
+            <Button target = "blank" href = {this.props.url} className = {classes.button} variant = "outlined" onClick = {this.props.growEvent}> 
+              <span className = "Skills-text1"> See it Online </span>
+            </Button>
+            </div>
+            :
+            <div>
+            <Button target = "blank" href = {this.props.url} className = {classes.button} variant = "outlined" onClick = {this.props.growEvent}> 
+              <span className = "Skills-text1"> See it Online </span>
+            </Button>
+            <Button target = "blank" href = {this.props.repoLink} className = {classes.button} variant = "outlined" onClick = {this.props.growEvent}> 
             <span className = "Skills-text2"> View Source Code </span>
-          </Button>
+            </Button>
+            </div>
+          }
+          
+          
         </div>
       </div>
     )

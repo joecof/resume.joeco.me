@@ -49,9 +49,13 @@ code {
   }
 
   .Skills-text1 {
-    font-size: 8pt;
-    font-family: 'Montserrat', sans-serif;  
+    font-size:10pt;
   }
+
+  .Skills-text2 {
+    font-size:10pt;
+  }
+
 }
 
 @media only screen and (min-width: 376px) and (max-width: 768px) {
@@ -88,6 +92,14 @@ code {
   .Paper-education {
     text-align: left;
     font-size:9pt;
+  }
+
+  .Skills-text1 {
+    font-size:10pt;
+  }
+
+  .Skills-text2 {
+    font-size:10pt;
   }
 }
 
@@ -129,6 +141,14 @@ code {
     font-size: 8pt;
   }
 
+  .Skills-text1 {
+    font-size:12pt;
+  }
+
+  .Skills-text2 {
+    font-size:12pt;
+  }
+
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1366px) {
@@ -148,6 +168,14 @@ code {
 
   .Paper-education {
     text-align: left;
+  }
+
+  .Skills-text1 {
+    font-size:12pt;
+  }
+
+  .Skills-text2 {
+    font-size:12pt;
   }
 }
 
@@ -173,6 +201,14 @@ code {
 
   .Paper-education {
     text-align: left;
+  }
+
+  .Skills-text1 {
+    font-size:12pt;
+  }
+
+  .Skills-text2 {
+    font-size:12pt;
   }
 
 }

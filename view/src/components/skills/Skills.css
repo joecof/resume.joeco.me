@@ -8,21 +8,22 @@
 .Skills-button {
   border: 1x solid white !important;
   color:white !important;
+  
 }
 
-.Skills-text1 {
+/* .Skills-text1 {
   font-size: 12pt;
   font-family: 'Montserrat', sans-serif;  
-}
+} */
 
 .Skills-text1:hover {
   color: lightgreen !important; 
 }
 
-.Skills-text2 {
+/* .Skills-text2 {
   font-size: 12pt;
   font-family: 'Montserrat', sans-serif;  
-}
+} */
 
 .Skills-text2:hover {
   color: lightgreen !important; 
