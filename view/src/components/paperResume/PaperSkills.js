@@ -16,12 +16,6 @@ const styles = theme => ({
   date: {
     float:'right',
     fontSize: '12pt',
-  }, 
-  skills: {
-    textAlign: 'left',
-    fontSize: '12pt',
-    letterSpacing: '2px',
-    display: 'block'
   }
 });
 
@@ -32,17 +26,17 @@ class PaperSkills extends Component {
     return (
       <div className = "Paper-skills">
         <div className = "PaperSkills-container1">
-          <Typography variant="h6" className={classes.skills}>
+          <p className= "Paper-skills-title" >
             {this.props.title1} 
-          </Typography>
+          </p>
           <ul>
             <li>
               {this.props.d1}
             </li>
           </ul>
-          <Typography variant="h6" className={classes.skills}>
+          <p className="Paper-skills-title">
             {this.props.title2} 
-          </Typography>
+          </p>
           <ul>
             <li>
               {this.props.d2}
@@ -50,17 +44,17 @@ class PaperSkills extends Component {
           </ul>
         </div>
       <div className = "PaperSkills-container2">
-        <Typography variant="h6" className={classes.skills}>
+        <p className="Paper-skills-title">
           {this.props.title3} 
-        </Typography>
+        </p>
         <ul>
           <li>
             {this.props.d3}
           </li>
         </ul>
-        <Typography variant="h6" className={classes.skills}>
-          {this.props.title4} 
-        </Typography>
+          <p className="Paper-skills-title">
+            {this.props.title4} 
+          </p>
         <ul>
           <li>
             {this.props.d4}

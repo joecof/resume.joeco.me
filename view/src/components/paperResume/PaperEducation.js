@@ -10,12 +10,10 @@ const styles = theme => ({
   },
   education: {
     textAlign: 'left',
-    fontSize: '12pt',
     letterSpacing: '2px',
   }, 
   date: {
     float:'right',
-    fontSize: '12pt',
   }
 });
 
@@ -26,9 +24,9 @@ class PaperEducation extends Component {
 
     return (
       <div className = "Paper-education">
-        <Typography variant="h6" className={classes.education}>
-           {this.props.title} <span className = {classes.date}> {this.props.date} </span>
-          </Typography>
+        <p className= "Paper-education-text">
+          {this.props.title} <span className = {classes.date}> {this.props.date} </span>
+        </p>
         <br/>
       </div>
     )

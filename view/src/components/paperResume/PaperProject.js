@@ -26,12 +26,12 @@ class PaperProject extends Component {
 
     return (
       <div className = "Paper-projects">
-        <Typography variant="h6" className={classes.projects}>
+        <p className="Paper-projects-title">
             {this.props.title}  	<span className = {classes.date}> {this.props.date} </span>   
-        </Typography>
-        <Typography variant="h8" className={classes.projects}>
+        </p>
+        <p className="Paper-projects-title">
           <a href={this.props.url} target = "blank"> {this.props.url} </a>             
-        </Typography>
+        </p>
           <ul>
             <li>
               {this.props.d1}    

@@ -3,21 +3,20 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import github from '../../images/github-logo.png'; 
 import linkedin from '../../images/linkedin.png'; 
+import gmail from '../../images/gmail.png'; 
+
 import resume from '../../images/resume.png'; 
 import resumeText from '../../text/joeco-fong-resume.pdf'; 
 
 const useStyles = makeStyles(theme => ({
   contactContainer: {
-    width: "45%",
+    width: "100%",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
     height: "100%",
-    marginLeft: "5%",
     borderTop: "1px solid lightgray",
-    borderRight: "1px solid lightgray",
-    borderBottom: "1px solid lightgray"
   },
   emailUs: {
     width: "75%",
@@ -32,7 +31,7 @@ const useStyles = makeStyles(theme => ({
   },
   socialMedia: {
     width: "75%",
-    display: "flex"
+
   },
   instagramLabel: {
     height: "50px",
@@ -88,7 +87,11 @@ const useStyles = makeStyles(theme => ({
   socialMediaLogo: {
     width: '40px',
     padding: '15px'
-  }
+  }, 
+  gmailLogo: {
+    paddingLeft: '10px',
+    width: '40px',
+  },
 }));
 
 export default function() {
@@ -99,10 +102,13 @@ export default function() {
       <div className={classes.emailUs}>Email Me</div>
       <div className={classes.emailUsMessage}>
         I would love to hear from you and work together on future projects! 
-        Reach out and I'll respond as soon as I can.
+        Reach out and I'll respond as soon as I can. 
+        <a href="mailto:joecofg@gmail.com.com" target="_top">
+          <img className= {classes.gmailLogo} src={gmail} alt="gmail" />
+        </a>
       </div>
       <div className={classes.socialMedia}>
-        <a href="https://github.com/joecof">
+        {/* <a href="https://github.com/joecof">
           <img className = {classes.socialMediaLogo} src={github} alt="github" />
         </a>
         <a href="https://www.linkedin.com/feed/">
@@ -110,7 +116,12 @@ export default function() {
         </a>
         <a href={resumeText} download>
           <img className = {classes.socialMediaLogo} src = {resume} alt="resume"/>        
-        </a>
+        </a> */}
+        
+        {/* <span className = {classes.sendMeText}>  Send me an email !  ---> </span> */}
+        {/* <a href="mailto:joecofg@gmail.com.com" target="_top">
+          <img className= {classes.gmailLogo} src={gmail} alt="gmail" />
+        </a> */}
       </div>
     </div>
   );

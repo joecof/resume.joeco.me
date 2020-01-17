@@ -7,6 +7,17 @@
   font-family: 'Calibri', sans-serif;
 }
 
+.Paper-label {
+  color: black;
+  display: block;
+  background-color: #E0E0E0;
+  margin-bottom: 10px;
+  font-weight: bolder;
+  font-size: 14pt;
+  padding: 4px;
+  letter-spacing: 2px;
+}
+
 .Paper-Header {
   padding: 10px;
   margin-bottom: 10px;
@@ -14,7 +25,6 @@
 
 .Paper-skills {
   text-align: left;
-  margin-left: 100px;
 }
 
 .Paper-skills li {

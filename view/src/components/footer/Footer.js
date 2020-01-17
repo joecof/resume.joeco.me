@@ -4,11 +4,14 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles(theme => ({
   outerContainer: {
     width: "100%",
-    height: "60px",
+    height: "45px",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
+    borderTop: "1px solid lightgray",
+    fontSize: '1em'
+
   },
   container: {
     width: "100%",

@@ -1,9 +1,11 @@
-import React from "react";
+import React, { Component } from 'react'
 import Contact from "./Contact";
 import SocialMedia from "./SocialMedia";
-import { makeStyles } from "@material-ui/core/styles";
+import { withStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles(theme => ({
+import './ContactSection.css';
+
+const styles = theme => ({  
   contactContainer: {
     width: "100%",
     height: "400px",
@@ -11,17 +13,41 @@ const useStyles = makeStyles(theme => ({
     alignItems: "center",
     marginTop: '75px'
   }
-}));
+});
 
-export default function() {
-  const classes = useStyles();
+class ContactSection extends Component{
 
-  return (
-    <div>
-      <div className={classes.contactContainer}>
-        <SocialMedia />
-        <Contact />
+  constructor(props) {
+
+    super(props);
+
+  }
+
+  render() {
+    const { classes } = this.props;
+    return (
+      <div>
+        {/* <div className={classes.contactContainer}> */}
+
+          {window.innerWidth < 650? 
+            <div className={classes.contactContainer}>
+              <SocialMedia />
+            </div> :
+            <div className={classes.contactContainer}>
+              <SocialMedia />
+              {/* <Contact /> */}
+            </div>
+          }
+          
+        {/* </div> */}
       </div>
-    </div>
-  );
+    );
+  }
+
 }
+
+
+
+export default withStyles(styles, { withTheme: true })(ContactSection);
+
+

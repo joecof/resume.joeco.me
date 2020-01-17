@@ -19,16 +19,19 @@ class App extends Component {
 
     this.state = ({
       download: true,
-      closed: false
+      closed: false,
+      screenWidth: null
     })
 
     this.listenScrollEvent = this.listenScrollEvent.bind(this);
     this.handleClose = this.handleClose.bind(this);
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
 
   }
 
   componentDidMount() {
     window.addEventListener('scroll', this.listenScrollEvent);
+    window.addEventListener("resize", this.updateWindowDimensions());
 
     this.setState({
       download: false, 
@@ -37,7 +40,12 @@ class App extends Component {
   }
   componentWillUnmount() {
     window.removeEventListener('scroll', this.listenScrollEvent);
+    window.removeEventListener("resize", this.updateWindowDimensions)
   }
+
+  updateWindowDimensions() {
+    this.setState({ screenWidth: window.innerWidth });
+ }
 
   listenScrollEvent() {
     const distanceY = window.pageYOffset;
@@ -64,6 +72,7 @@ class App extends Component {
       closed: true
     })
   };
+
 
   render() {
     return(

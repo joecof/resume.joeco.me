@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { withStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
 import close from '../../images/close.png'; 
 import PaperProject from './PaperProject'
 import PaperEducation from './PaperEducation'
@@ -69,9 +68,9 @@ class PaperResume extends Component {
           contact = "(778) 883 6220 – joecofg@gmail.com "
           url = "https://github.com/joecof"
         />
-        <Typography variant="h6" className={classes.label} >
+        <p className = "Paper-label">
           SKILLS AND QUALIFICATIONS
-        </Typography>
+        </p>
         <PaperSkills 
           title1 = "FRAMEWORKS/LIBRARIES"
           title2 = "LANGUAGES"
@@ -82,9 +81,9 @@ class PaperResume extends Component {
           d3 = "React, Material UI, Bootstrap, PrimeFaces, JavaServer Faces"
           d4 = "Amazon EC2, Dockers, PM2, NGINX, Heroku, Firebase, WildFly/JBoss, Maven"
         />
-        <Typography variant="h6" className={classes.label}>
+        <p className = "Paper-label">
           EXPERIENCE
-        </Typography>
+        </p>
         <div className = "Paper-projects">
           <PaperProject 
             title = "joeco.me "
@@ -100,9 +99,9 @@ class PaperResume extends Component {
             date = "September – December 2019"
             url = "https://tempify-v2.herokuapp.com/"
             d1 = "Implemented authentication with signed JWT tokens to secure API requests."
-            d2 = "Improved load speeds by +200% by refactoring codebase from Laravel 5.5 to MERN stack."
-            d3 = "Deployed application through Heroku, and migrated database schema from a third-party MySQL provider to Heroku's MySQL ClearDB add-on."
-            d4 = "Implemented a MySQL query to select specific archived data across multiple tables, and used Material UI components to render the data to users."
+            d2 = "Refactoring codebase from Laravel 5.5 to Node/React and increased load speeds by +200%. "
+            d3 = "Deployed application through Heroku, and completed a database migration from Remote MySQL to Heroku's MySQL ClearDB add-on."
+            d4 = "Implemented MySQL queries to select specific archived data across multiple tables, and used Material UI components to render the data to users."
           />
           <PaperProject 
             title = "Operation Regen"
@@ -132,23 +131,23 @@ class PaperResume extends Component {
             d4 = "Used CSS Bootstrap to build frontend."
           />
         </div>
-        <Typography variant="h6" className={classes.label}>
+        <p className= "Paper-label">
           EDUCATION
-        </Typography>
+        </p>
         <div className = "Paper-education">
           <PaperEducation
-            title = "ASSOCIATE DEGREE – COMPUTER SYSTEM TECHNOLOGY BCIT"
+            title = "ASSOCIATE DEGREE – COMPUTER SYSTEM TECHNOLOGY BCIT, BURNABY"
             date = "2018 – Present"
           />
           <PaperEducation
             title = "DEGREE – HEALTH SCIENCES SFU, BURNABY"
-            date = "2010 – 2016"
+            date = "2016"
           />
         </div>
         <div>
-          <Typography variant="h6" className={classes.label}>
+          <p className="Paper-label">
             PROJECTS
-          </Typography>
+          </p>
           <Projects/>
         </div>
       </div>

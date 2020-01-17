@@ -4,6 +4,13 @@
   justify-content: space-between;
 }
 
+/* .Paper-skills-title {
+  text-align: left;
+  font-size: 12pt;
+  letter-spacing: 2px;
+  display: block;
+} */
+
 .PaperSkills-container1 {
   flex-grow: 1;
   margin-right: auto;
