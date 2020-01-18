@@ -59,7 +59,7 @@ class Projects extends Component {
           nodemailer = {<Chip avatar={<Avatar alt="nodemailer" src= {nodemailer} />} label="Nodemailer" color="secondary" className = {classes.chips}/>}
           nginx = {<Chip avatar={<Avatar alt="NGINX" src= {nginx} />} label="NGINX" color="default" className = {classes.chips}/>}
           express = {<Chip avatar={<Avatar alt="Express" src= {express} />} label="Express js" color="secondary" className = {classes.chips}/>}
-          amazon = {<Chip avatar={<Avatar alt="AmazonEC2" src= {amazon} />} label="Amazon EC2" color="default" className = {classes.chips}/>}
+          amazon = {<Chip avatar={<Avatar alt="AmazonEC2" src= {amazon} />} label="AmazonEC2" color="default" className = {classes.chips}/>}
           pm2 = {<Chip avatar={<Avatar alt="pm2" src= {pm2} />} label="PM2" color="default" className = {classes.chips}/>}
         /> 
         <Project 

@@ -81,11 +81,7 @@ class Skills extends Component {
         <div className = "Skills-button-container"> 
 
           {window.innerWidth < 450 ? 
-            <div>
-            <Button target = "blank" href = {this.props.url} className = {classes.button} variant = "outlined" onClick = {this.props.growEvent}> 
-              <span className = "Skills-text1"> See it Online </span>
-            </Button>
-            </div>
+            null
             :
             <div>
             <Button target = "blank" href = {this.props.url} className = {classes.button} variant = "outlined" onClick = {this.props.growEvent}> 
@@ -96,8 +92,6 @@ class Skills extends Component {
             </Button>
             </div>
           }
-          
-          
         </div>
       </div>
     )
