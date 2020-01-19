@@ -18,14 +18,14 @@
   padding-top:300px;
 }
 
-.Header-name2::after {
+/* .Header-name2::after {
 	content: '|';
 	display: inline;
 	-webkit-animation: blink 0.5s infinite;
 	-moz-animation: blink 0.5s infinite;
   animation: blink 0.5s infinite;
   animation-duration: 1s;
-}
+} */
 
 .Header-contact {
   font-size: 22pt;

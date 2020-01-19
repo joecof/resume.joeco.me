@@ -21,7 +21,7 @@ const styles = theme => ({
     margin: '10px'
   },
   media: {
-    height: 290,
+    height: 300,
   },
   text: {
     fontFamily: 'Montserrat',

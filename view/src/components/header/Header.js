@@ -29,6 +29,7 @@ class Header extends Component {
   }
 
   componentWillUnmount() {
+    
     this.typed.destroy();
   }
 

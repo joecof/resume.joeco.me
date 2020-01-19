@@ -23,14 +23,14 @@ const styles = theme => ({
     paddingTop: '40px',
   },
   descContainer: {
-    marginTop: '15px',
     padding: '10px',
   },
   button: {
     border: '1px solid white',
     color: 'white',
-    marginTop:'20px',
-    marginRight: '20px',
+    marginTop:'10px',
+    marginRight: '10px',
+    height: '40px'
   },
   icon: {
     width: '20%'
@@ -81,14 +81,16 @@ class Skills extends Component {
         <div className = "Skills-button-container"> 
 
           {window.innerWidth < 450 ? 
-            null
+            <Button target = "blank" href = {this.props.url} className = {classes.button} variant = "outlined" onClick = {this.props.growEvent}> 
+              <span className = "Skills-text1"> See it Online </span>
+            </Button>
             :
-            <div>
+            <div className = "Skills-button-container2">
             <Button target = "blank" href = {this.props.url} className = {classes.button} variant = "outlined" onClick = {this.props.growEvent}> 
               <span className = "Skills-text1"> See it Online </span>
             </Button>
             <Button target = "blank" href = {this.props.repoLink} className = {classes.button} variant = "outlined" onClick = {this.props.growEvent}> 
-            <span className = "Skills-text2"> View Source Code </span>
+            <span className = "Skills-text2"> See Source Code </span>
             </Button>
             </div>
           }

@@ -55,7 +55,7 @@ class Projects extends Component {
           url = "https://www.joeco.me/"
           react = { <Chip avatar={<Avatar alt="react" src= {react} />} label="React" color="primary" className = {classes.chips}/>}
           materialui = {<Chip avatar={<Avatar alt="materialui" src= {materialui} />} label="Material UI" color="primary" className = {classes.chips}/>}
-          node = {<Chip avatar={<Avatar alt="node" src= {node} />} label="Node js" color="secondary" className = {classes.chips}/>}
+          node = {<Chip avatar={<Avatar alt="node" src= {node} />} label="Node" color="secondary" className = {classes.chips}/>}
           nodemailer = {<Chip avatar={<Avatar alt="nodemailer" src= {nodemailer} />} label="Nodemailer" color="secondary" className = {classes.chips}/>}
           nginx = {<Chip avatar={<Avatar alt="NGINX" src= {nginx} />} label="NGINX" color="default" className = {classes.chips}/>}
           express = {<Chip avatar={<Avatar alt="Express" src= {express} />} label="Express js" color="secondary" className = {classes.chips}/>}
@@ -70,7 +70,7 @@ class Projects extends Component {
           url = "https://tempify-v2.herokuapp.com/"
           react = { <Chip avatar={<Avatar alt="react" src= {react} />} label="React" color="primary" className = {classes.chips}/>}
           materialui = {<Chip avatar={<Avatar alt="materialui" src= {materialui} />} label="Material UI" color="primary" className = {classes.chips}/>}
-          node = {<Chip avatar={<Avatar alt="node" src= {node} />} label="Node js" color="secondary" className = {classes.chips}/>}
+          node = {<Chip avatar={<Avatar alt="node" src= {node} />} label="Node" color="secondary" className = {classes.chips}/>}
           express = {<Chip avatar={<Avatar alt="Express" src= {express} />} label="Express js" color="secondary" className = {classes.chips}/>}
           jwt = {<Chip avatar={<Avatar alt="jwt" src= {jwt} />} label="JWT" color="secondary" className = {classes.chips}/>}
           heroku = {<Chip avatar={<Avatar alt="heroku" src= {heroku} />} label="Heroku" color="default" className = {classes.chips}/>}
@@ -85,7 +85,7 @@ class Projects extends Component {
           react = { <Chip avatar={<Avatar alt="react" src= {react} />} label="React" color="primary" className = {classes.chips}/>}
           bootstrap = { <Chip avatar={<Avatar alt="bootstrap" src= {bootstrap} />} label="Bootstrap" color="primary" className = {classes.chips}/>}
           phaser = { <Chip avatar={<Avatar alt="phaser" src= {phaser} />} label="Phaser" color="primary" className = {classes.chips}/>}
-          node = {<Chip avatar={<Avatar alt="node" src= {node} />} label="Node js" color="secondary" className = {classes.chips}/>}
+          node = {<Chip avatar={<Avatar alt="node" src= {node} />} label="Node" color="secondary" className = {classes.chips}/>}
           express = {<Chip avatar={<Avatar alt="Express" src= {express} />} label="Express js" color="secondary" className = {classes.chips}/>}
           mysql = {<Chip avatar={<Avatar alt="mysql" src= {mysql} />} label="MySql" color="secondary" className = {classes.chips}/>}
           heroku = {<Chip avatar={<Avatar alt="heroku" src= {heroku} />} label="Heroku" color="default" className = {classes.chips}/>}
@@ -120,7 +120,7 @@ class Projects extends Component {
           repoLink = "https://github.com/joecof/chat-app.git"
           url = "/"
           socketio = {<Chip avatar={<Avatar alt="SocketIO" src= {socketio} />} label= "Socket.io" color="secondary" className = {classes.chips}/>}
-          node = {<Chip avatar={<Avatar alt="node" src= {node} />} label="Node js" color="secondary" className = {classes.chips}/>}
+          node = {<Chip avatar={<Avatar alt="node" src= {node} />} label="Node" color="secondary" className = {classes.chips}/>}
           express = {<Chip avatar={<Avatar alt="Express" src= {express} />} label="Express js" color="secondary" className = {classes.chips}/>}
           bootstrap = { <Chip avatar={<Avatar alt="bootstrap" src= {bootstrap} />} label="Bootstrap" color="primary" className = {classes.chips}/>}
         />     

@@ -3,18 +3,22 @@
   max-width: 445px;
   background-color: #2E3133 !important;
   position: relative;
+
 }
 
 .Skills-button {
   border: 1x solid white !important;
   color:white !important;
-  
 }
 
-/* .Skills-text1 {
+.Skills-button-container {
+  text-align: center;
+}
+
+.Skills-text1 {
   font-size: 12pt;
   font-family: 'Montserrat', sans-serif;  
-} */
+}
 
 .Skills-text1:hover {
   color: lightgreen !important; 
