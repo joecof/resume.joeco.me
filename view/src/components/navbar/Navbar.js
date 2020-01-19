@@ -75,7 +75,7 @@ class Navbar extends Component {
         <AppBar className = {classes.NavbarContainer} position="fixed">
           <div className = {classes.NavbarIcons}> 
             <a href="https://github.com/joecof"><img className= "Navbar-github" src={github} alt="github" /></a>
-            <a href="https://www.linkedin.com/feed/"><img className= "Navbar-linkedin" src={linkedin} alt="linkedin" /></a>
+            <a href="www.linkedin.com/in/joeco-fong-0bb3aa128"><img className= "Navbar-linkedin" src={linkedin} alt="linkedin" /></a>
             <a href={resumeText} download> <img className = "Navbar-resume" src = {resume} alt="resume"/> </a>
             <a href="mailto:joecofg@gmail.com.com" target="_top"> <img className = "Navbar-gmail" src = {gmail} alt="gmail"/> </a>
           </div>
@@ -93,7 +93,7 @@ class Navbar extends Component {
         <AppBar className = {classes.NavbarContainer} position="fixed" elevation = {0}>
           <div className = {classes.NavbarIcons}> 
             <a href="https://github.com/joecof"><img className= "Navbar-github" src={github} alt="github" /></a>
-            <a href="https://www.linkedin.com/feed/"><img className= "Navbar-linkedin" src={linkedin} alt="linkedin" /></a>
+            <a href="www.linkedin.com/in/joeco-fong-0bb3aa128"><img className= "Navbar-linkedin" src={linkedin} alt="linkedin" /></a>
             <a href={resumeText} download> <img className = "Navbar-resume" src = {resume} alt="resume"/> </a>
             <a href="mailto:joecofg@gmail.com.com?Subject=Resume%20Inquiry&amp;body=Hi%20Joeco%20!%0A%0AHow%20are%20you%20?" target="_top"> <img className = "Navbar-gmail" src = {gmail} alt="gmail"/> </a>
           </div>
