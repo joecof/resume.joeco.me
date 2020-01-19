@@ -18,13 +18,6 @@ const styles = theme => ({
     flexDirection: 'column', 
     justifyContent: 'center',
   },
-  
-  title: {
-    color: 'black',
-    display: 'block',
-    fontFamily: 'Montserrat',
-    fontStyle:'sans-serif'
-  }, 
   NavbarIcons: {
     display: 'flex',
     flexDirection: 'row', 
@@ -88,9 +81,9 @@ class Navbar extends Component {
           </div>
           <Fade in={true}>
           <div className = {classes.NavBarTextContainer}>
-            <Typography variant="h8" className={classes.title}>
+            <p variant="h8" className="Navbar-title">
               Joeco Fong  – joecofg@gmail.com  -  Full Stack Developer  -  <a href="https://github.com/joecof">https://github.com/joecof </a>
-            </Typography>
+            </p>
           </div>
           </Fade>
         </AppBar> 

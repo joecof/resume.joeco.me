@@ -39,11 +39,19 @@ class Header extends Component {
       <div className= "Header-container">
         <Collapse in={this.state.checked}>
           <div>
-          <span
+          {window.innerWidth < 450 ? 
+            <span
+            style={{ whiteSpace: 'pre',   'paddingTop':'90px'}}
+            ref={(el) => { this.el = el; }}
+            className = "Header-name2"
+            />
+            :
+            <span
             style={{ whiteSpace: 'pre',   'paddingTop':'90px'}}
             ref={(el) => { this.el = el; }}
             className = "Header-name"
-          />
+            />
+          }
           </div>
           <p className = "Header-contact"> (778) 883 6220 – joecofg@gmail.com</p>
           <a className = "Header-github" href="https://github.com/joecof">https://github.com/joecof</a>
