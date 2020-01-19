@@ -116,7 +116,7 @@ class PaperResume extends Component {
             title = "BookApp"
             date = "September – December 2019"
             url = "https://appetize.io/app/pwv2aknnphf9y6mep9xkzx8azw"
-            d1 = "Developed a flexible database solution to limit 15 users per available activity for any given day of the week for 6 of the most popular recreation centers in Surrey."
+            d1 = "Designed a flexible database solution to limit 15 users per available activity for any given day of the week for 6 of the most popular recreation centers in Surrey."
             d2 = "Developed the mobile application in Android Studios using Java, XML, Firebase Real-Time DB."
             d3 = "Implemented a denormalize database schema using NoSQL to significantly improve read performance."
             d4 = "Leveraged the city of Surrey's API dataset to develop a schedule and activities list for clients to sign up with."
