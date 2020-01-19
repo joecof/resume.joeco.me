@@ -175,6 +175,7 @@ code {
   }
 
 
+
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1366px) {
@@ -211,7 +212,6 @@ code {
     font-style:'sans-serif';
     font-size: 12pt;
   }
-
 }
 
 @media only screen and (min-width: 1367px) and (max-width: 1920px) {
@@ -253,6 +253,5 @@ code {
     font-style:'sans-serif';
     font-size: 12pt;
   }
-  
 
 }

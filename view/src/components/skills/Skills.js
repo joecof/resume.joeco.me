@@ -14,7 +14,8 @@ const styles = theme => ({
     fontFamily: 'Montserrat',
     fontStyle:'sans-serif',
     color: 'white',
-    textAlign: 'center'
+    textAlign: 'center',
+    height: '60px'
   },
   title: {
     fontFamily: 'Montserrat',
@@ -23,14 +24,12 @@ const styles = theme => ({
     paddingTop: '40px',
   },
   descContainer: {
-    padding: '10px',
     height: '170px'
   },
   button: {
     border: '1px solid white',
     color: 'white',
     marginTop:'10px',
-    marginRight: '10px',
     height: '40px'
   },
   icon: {
@@ -86,12 +85,9 @@ class Skills extends Component {
             </Button>
             :
             <div className = "Skills-button-container2">
-            <Button target = "blank" href = {this.props.url} className = {classes.button} variant = "outlined" onClick = {this.props.growEvent}> 
-              <span className = "Skills-text1"> See it Online </span>
-            </Button>
-            <Button target = "blank" href = {this.props.repoLink} className = {classes.button} variant = "outlined" onClick = {this.props.growEvent}> 
-            <span className = "Skills-text2"> See Source Code </span>
-            </Button>
+              <Button target = "blank" href = {this.props.url} className = {classes.button} variant = "outlined" onClick = {this.props.growEvent}> 
+                <span className = "Skills-text1"> See it Online </span>
+              </Button>
             </div>
           }
         </div>
