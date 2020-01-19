@@ -105,7 +105,7 @@ class Projects extends Component {
           title = "BookApp"
           image = {bookapp}
           description = "An android application that books recreational activities in the city of Surrey"
-          repoLink = "https://github.com/joecof/BookApp.git"
+          repoLink = "https://appetieze.io/app/pwv2aknnphf9y6mep9xkzx8azw"
           url = "/"
           xhtml = { <Chip avatar={<Avatar alt="XHTML" src= {xhtml} />} label="XHTML" color="primary" className = {classes.chips}/>}
           java = {<Chip avatar={<Avatar alt="Java" src= {java} />} label= "Java" color="secondary" className = {classes.chips}/>}
