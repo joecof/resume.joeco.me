@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c427dc95f8d960572c54ee17c13cd8bc",
+    "revision": "3714c88c9eb457d816117af4810a0a16",
     "url": "/index.html"
   },
   {
-    "revision": "15f44023d77cf9bda224",
+    "revision": "f3a70fc8369a1ec896e7",
     "url": "/static/css/main.8497af16.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.fbe7fcca.chunk.js.LICENSE"
   },
   {
-    "revision": "15f44023d77cf9bda224",
-    "url": "/static/js/main.dac6963b.chunk.js"
+    "revision": "f3a70fc8369a1ec896e7",
+    "url": "/static/js/main.223444d0.chunk.js"
   },
   {
     "revision": "45bd90e9b28db37c43f4",
@@ -56,8 +56,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/java.e12b9ebf.png"
   },
   {
-    "revision": "011c47cba45987e1675341a904096860",
-    "url": "/static/media/joeco-fong-resume.011c47cb.pdf"
+    "revision": "d983a48cb82263f461d827146de26352",
+    "url": "/static/media/joeco-fong-resume.d983a48c.pdf"
   },
   {
     "revision": "0d3f8d22fcf72f4b8e32557a18201f4b",
