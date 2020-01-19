@@ -77,7 +77,7 @@ class PaperResume extends Component {
           title3 = "FRONTEND FRAMEWORKS"
           title4 = "DEVOPS/SYSADMIN"
           d1 = "Node, ASP.Net, JWT.io, Express.js, Socket.io, Phaser.js, Java Persistence API, Mongoose"
-          d2 = "C++, C#, Java, JavaScript, C, MySQL, NoSQL, Python"
+          d2 = "C++, C#, Java, JavaScript, Python, C, MySQL, NoSQL"
           d3 = "React, Material UI, Bootstrap, PrimeFaces, JavaServer Faces"
           d4 = "AmazonEC2, Dockers, PM2, NGINX, Heroku, Firebase, WildFly/JBoss, Maven, MySQL, MongoDB"
         />
