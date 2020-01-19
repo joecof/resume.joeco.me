@@ -24,6 +24,7 @@ const styles = theme => ({
   },
   descContainer: {
     padding: '10px',
+    height: '170px'
   },
   button: {
     border: '1px solid white',
@@ -79,7 +80,6 @@ class Skills extends Component {
           </div>
         </div>
         <div className = "Skills-button-container"> 
-
           {window.innerWidth < 450 ? 
             <Button target = "blank" href = {this.props.url} className = {classes.button} variant = "outlined" onClick = {this.props.growEvent}> 
               <span className = "Skills-text1"> See it Online </span>
