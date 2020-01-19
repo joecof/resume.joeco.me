@@ -24,7 +24,7 @@ const styles = theme => ({
     paddingTop: '40px',
   },
   descContainer: {
-    height: '170px'
+    height: '180px'
   },
   button: {
     border: '1px solid white',
