@@ -76,10 +76,10 @@ class PaperResume extends Component {
           title2 = "LANGUAGES"
           title3 = "FRONTEND FRAMEWORKS"
           title4 = "DEVOPS/SYSADMIN"
-          d1 = "Node, JWT.io, Express.js, Socket.io, Phaser.js, Java Persistence API"
-          d2 = "C++, Java, JavaScript, C, MySQL, NoSQL, Mongoose"
+          d1 = "Node, ASP.Net, JWT.io, Express.js, Socket.io, Phaser.js, Java Persistence API, Mongoose"
+          d2 = "C++, C#, Java, JavaScript, C, MySQL, NoSQL, Python"
           d3 = "React, Material UI, Bootstrap, PrimeFaces, JavaServer Faces"
-          d4 = "Amazon EC2, Dockers, PM2, NGINX, Heroku, Firebase, WildFly/JBoss, Maven"
+          d4 = "AmazonEC2, Dockers, PM2, NGINX, Heroku, Firebase, WildFly/JBoss, Maven, MySQL, MongoDB"
         />
         <p className = "Paper-label">
           EXPERIENCE
@@ -90,16 +90,16 @@ class PaperResume extends Component {
             date = "December 2019 – January 2020"
             url = "https://www.joeco.me/"
             d1 = "Deployed using an AWS EC2 Linux instance that runs a NGINX reverse proxy to a PM2 managed express server."
-            d2 = "Developed using React with Material UI components."
+            d2 = "Designed, architected, and implemented a scalable UX focused, responsive front-end design using React with Material UI components. "
             d3 = "Configured SSL Certification using NGINX with Let's Encrypt/CertBot to enable HTTPS."
-            d4 = "Implemented Nodemailer to allow for clients to securely deliver emails through the application." 
+            d4 = "Implemented Google Analytics to track user activity with user experience improvement in mind." 
           />
           <PaperProject 
             title = "Tempify"
             date = "September – December 2019"
             url = "https://tempify-v2.herokuapp.com/"
             d1 = "Implemented authentication with signed JWT tokens to secure API requests."
-            d2 = "Refactoring codebase from Laravel 5.5 to Node/React and increased load speeds by +200%. "
+            d2 = "Refactored codebase from Laravel 5.5 to Node/React increased load speeds by +200%. "
             d3 = "Deployed application through Heroku, and completed a database migration from Remote MySQL to Heroku's MySQL ClearDB add-on."
             d4 = "Implemented MySQL queries to select specific archived data across multiple tables, and used Material UI components to render the data to users."
           />
