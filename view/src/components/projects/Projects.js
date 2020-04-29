@@ -67,7 +67,7 @@ class Projects extends Component {
           image = {tempify}
           description = "A Vancouver based web application that connects temp workers with offices"
           repoLink = "https://github.com/joecof/Tempify"
-          url = "https://tempify-v2.herokuapp.com/"
+          url = "http://www.tempify.ca/"
           react = { <Chip avatar={<Avatar alt="react" src= {react} />} label="React" color="primary" className = {classes.chips}/>}
           materialui = {<Chip avatar={<Avatar alt="materialui" src= {materialui} />} label="Material UI" color="primary" className = {classes.chips}/>}
           node = {<Chip avatar={<Avatar alt="node" src= {node} />} label="Node" color="secondary" className = {classes.chips}/>}
