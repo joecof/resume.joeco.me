@@ -6,8 +6,7 @@ import gmail from '../../images/gmail.png';
 import resume from '../../images/resume.png'; 
 import resumeText from '../../text/joeco-fong-resume.pdf'; 
 import AppBar from '@material-ui/core/AppBar';
-import Typography from '@material-ui/core/Typography';
-import Fade from '@material-ui/core/Fade';
+
 import './Navbar.css';
 
 const styles = theme => ({  
@@ -69,40 +68,14 @@ class Navbar extends Component {
     const { classes } = this.props;
 
     return(
-      this.state.sticky ? 
       <div className = "Navbar-container"> 
-        <AppBar className = {classes.NavbarContainer} position="fixed">
+        <AppBar className = {classes.NavbarContainer} position="absolute" elevation = {0}>
           <div className = {classes.NavbarIcons}> 
             <a href="https://github.com/joecof"><img className= "Navbar-github" src={github} alt="github" /></a>
             <a href="https://www.linkedin.com/in/joeco-fong-0bb3aa128/" target="_blank"><img className= "Navbar-linkedin" src={linkedin} alt="linkedin" /></a>
             <a href={resumeText} download> <img className = "Navbar-resume" src = {resume} alt="resume"/> </a>
             <a href="mailto:joecofg@gmail.com.com" target="_top"> <img className = "Navbar-gmail" src = {gmail} alt="gmail"/> </a>
           </div>
-          <Fade in={true}>
-          <div className = {classes.NavBarTextContainer}>
-            <p variant="h8" className="Navbar-title">
-              Joeco Fong  – joecofg@gmail.com  -  Full Stack Developer  -  <a href="https://github.com/joecof">https://github.com/joecof </a>
-            </p>
-          </div>
-          </Fade>
-        </AppBar> 
-      </div>
-        : 
-        <div className = "Navbar-container"> 
-        <AppBar className = {classes.NavbarContainer} position="fixed" elevation = {0}>
-          <div className = {classes.NavbarIcons}> 
-            <a href="https://github.com/joecof"><img className= "Navbar-github" src={github} alt="github" /></a>
-            <a href="https://www.linkedin.com/in/joeco-fong-0bb3aa128/"><img className= "Navbar-linkedin" src={linkedin} alt="linkedin" /></a>
-            <a href={resumeText} download> <img className = "Navbar-resume" src = {resume} alt="resume"/> </a>
-            <a href="mailto:joecofg@gmail.com.com?Subject=Resume%20Inquiry&amp;body=Hi%20Joeco%20!%0A%0AHow%20are%20you%20?" target="_top"> <img className = "Navbar-gmail" src = {gmail} alt="gmail"/> </a>
-          </div>
-          <Fade out={true}>
-          <div className = {classes.NavBarTextContainer}>
-            <Typography variant="h8" className={classes.title}>
-              Joeco Fong – joecofg@gmail.com - Full Stack Developer - <a href="https://github.com/joecof">https://github.com/joecof </a>
-            </Typography>
-          </div>
-          </Fade>
         </AppBar> 
       </div>
     )

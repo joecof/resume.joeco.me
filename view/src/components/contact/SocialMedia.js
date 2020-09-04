@@ -126,23 +126,6 @@ export default function() {
       </div>
       <div className={classes.emailUsMessage}>
         I would love to hear from you and work together on future projects! 
-        Reach out and I'll respond as soon as I can. 
-      </div>
-      <div className={classes.socialMedia}>
-        {/* <a href="https://github.com/joecof">
-          <img className = {classes.socialMediaLogo} src={github} alt="github" />
-        </a>
-        <a href="https://www.linkedin.com/feed/">
-          <img className= {classes.socialMediaLogo} src={linkedin} alt="linkedin" />
-        </a>
-        <a href={resumeText} download>
-          <img className = {classes.socialMediaLogo} src = {resume} alt="resume"/>        
-        </a> */}
-        
-        {/* <span className = {classes.sendMeText}>  Send me an email !  ---> </span> */}
-        {/* <a href="mailto:joecofg@gmail.com.com" target="_top">
-          <img className= {classes.gmailLogo} src={gmail} alt="gmail" />
-        </a> */}
       </div>
     </div>
   );
