@@ -1,2 +1,2 @@
-# joeco.me
-A web portfolio developed with the MERN stack. 
+# resume.joeco.me
+A online resume for Joe Fong.
