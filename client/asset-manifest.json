@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.e21f8355.chunk.css",
-    "main.js": "/static/js/main.b11728ef.chunk.js",
-    "main.js.map": "/static/js/main.b11728ef.chunk.js.map",
+    "main.css": "/static/css/main.47550db5.chunk.css",
+    "main.js": "/static/js/main.96cbd1b2.chunk.js",
+    "main.js.map": "/static/js/main.96cbd1b2.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.138d5630.js",
     "runtime-main.js.map": "/static/js/runtime-main.138d5630.js.map",
-    "static/js/2.fbe7fcca.chunk.js": "/static/js/2.fbe7fcca.chunk.js",
-    "static/js/2.fbe7fcca.chunk.js.map": "/static/js/2.fbe7fcca.chunk.js.map",
+    "static/js/2.00ff6266.chunk.js": "/static/js/2.00ff6266.chunk.js",
+    "static/js/2.00ff6266.chunk.js.map": "/static/js/2.00ff6266.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.9b1996d9f97d1957c1e605850f07fe70.js": "/precache-manifest.9b1996d9f97d1957c1e605850f07fe70.js",
+    "precache-manifest.87d42dee2d7570285ed0a1b8c7d21dc8.js": "/precache-manifest.87d42dee2d7570285ed0a1b8c7d21dc8.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.e21f8355.chunk.css.map": "/static/css/main.e21f8355.chunk.css.map",
-    "static/js/2.fbe7fcca.chunk.js.LICENSE": "/static/js/2.fbe7fcca.chunk.js.LICENSE",
+    "static/css/main.47550db5.chunk.css.map": "/static/css/main.47550db5.chunk.css.map",
+    "static/js/2.00ff6266.chunk.js.LICENSE": "/static/js/2.00ff6266.chunk.js.LICENSE",
     "static/media/bookapp.png": "/static/media/bookapp.539620dd.png",
     "static/media/bootstrap-logo.png": "/static/media/bootstrap-logo.b0eadec8.png",
     "static/media/chatapp.png": "/static/media/chatapp.94de2b22.png",
@@ -20,7 +20,7 @@
     "static/media/firebase.png": "/static/media/firebase.f158b174.png",
     "static/media/github-logo.png": "/static/media/github-logo.eec82a2d.png",
     "static/media/java.png": "/static/media/java.e12b9ebf.png",
-    "static/media/joeco-fong-resume.pdf": "/static/media/joeco-fong-resume.d983a48c.pdf",
+    "static/media/joeco-fong-resume.pdf": "/static/media/joeco-fong-resume.2da093cf.pdf",
     "static/media/joecome.png": "/static/media/joecome.ca26fac0.png",
     "static/media/jquery.png": "/static/media/jquery.a3af0655.png",
     "static/media/jwt.png": "/static/media/jwt.4749cb5b.png",
@@ -36,8 +36,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.138d5630.js",
-    "static/js/2.fbe7fcca.chunk.js",
-    "static/css/main.e21f8355.chunk.css",
-    "static/js/main.b11728ef.chunk.js"
+    "static/js/2.00ff6266.chunk.js",
+    "static/css/main.47550db5.chunk.css",
+    "static/js/main.96cbd1b2.chunk.js"
   ]
 }
