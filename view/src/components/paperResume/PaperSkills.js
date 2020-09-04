@@ -1,18 +1,19 @@
 import React, { Component } from 'react'
 import { withStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
-
-import './PaperSkills.css';
 
 const styles = theme => ({  
   paper: {
     margin: theme.spacing(1),
   },
-  projects: {
+  PaperSkills: {
     textAlign: 'left',
     fontSize: '12pt',
     letterSpacing: '2px',
   }, 
+  paperSkillsDesc: {
+    paddingTop: 15,
+    paddingBottom: 15,
+  },
   date: {
     float:'right',
     fontSize: '12pt',
@@ -23,45 +24,11 @@ class PaperSkills extends Component {
 
   render() {
     const { classes } = this.props;
+
     return (
-      <div className = "Paper-skills">
-        <div className = "PaperSkills-container1">
-          <p className= "Paper-skills-title" >
-            {this.props.title1} 
-          </p>
-          <ul>
-            <li>
-              {this.props.d1}
-            </li>
-          </ul>
-          <p className="Paper-skills-title">
-            {this.props.title2} 
-          </p>
-          <ul>
-            <li>
-              {this.props.d2}
-            </li>
-          </ul>
-        </div>
-      <div className = "PaperSkills-container2">
-        <p className="Paper-skills-title">
-          {this.props.title3} 
-        </p>
-        <ul>
-          <li>
-            {this.props.d3}
-          </li>
-        </ul>
-          <p className="Paper-skills-title">
-            {this.props.title4} 
-          </p>
-        <ul>
-          <li>
-            {this.props.d4}
-          </li>
-        </ul>
+      <div className = {classes.paperSkills}>
+        <p className = {classes.paperSkillsDesc}> <i> Skills/Frameworks: {this.props.skill}</i> </p>
       </div>
-    </div>
     )
   }
 }

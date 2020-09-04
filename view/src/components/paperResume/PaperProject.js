@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { withStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
+import PaperSkills from '../paperResume/PaperSkills'
 
 import './PaperProject.css';
 
@@ -27,11 +27,12 @@ class PaperProject extends Component {
     return (
       <div className = "Paper-projects">
         <p className="Paper-projects-title">
-            {this.props.title}  	<span className = {classes.date}> {this.props.date} </span>   
+            <b>{this.props.title}</b>  	<span className = {classes.date}> {this.props.date} </span>   
         </p>
         <p className="Paper-projects-title">
-          <a href={this.props.url} target = "blank"> {this.props.url} </a>             
+          {this.props.desc}            
         </p>
+        <PaperSkills skill = {this.props.skills}/>
           <ul>
             <li>
               {this.props.d1}    

@@ -25,7 +25,7 @@ class PaperEducation extends Component {
     return (
       <div className = "Paper-education">
         <p className= "Paper-education-text">
-          {this.props.title} <span className = {classes.date}> {this.props.date} </span>
+          <b>{this.props.title}</b> <span className = {classes.date}> {this.props.date} </span>
         </p>
         <br/>
       </div>

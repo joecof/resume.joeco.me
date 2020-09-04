@@ -62,73 +62,57 @@ class PaperResume extends Component {
 
     return (
       <div className = "Paper-container">
-        <img className = "Paper-close" src= {close} alt ="close" onClick = {this.props.growEvent} />
         <PaperContact
-          title = "JOECO FONG"
+          title = "JOE FONG"
           contact = "(778) 883 6220 – joecofg@gmail.com "
           url = "https://github.com/joecof"
         />
         <p className = "Paper-label">
-          SKILLS AND QUALIFICATIONS
+          PROFESSIONAL EXPERIENCE
         </p>
-        <PaperSkills 
-          title1 = "FRAMEWORKS/LIBRARIES"
-          title2 = "LANGUAGES"
-          title3 = "FRONTEND FRAMEWORKS"
-          title4 = "DEVOPS/SYSADMIN"
-          d1 = "Node, ASP.Net, JWT.io, Express.js, Socket.io, Phaser.js, Java Persistence API, Mongoose"
-          d2 = "C++, C#, Java, JavaScript, Python, C, MySQL, NoSQL"
-          d3 = "React, Material UI, Bootstrap, PrimeFaces, JavaServer Faces"
-          d4 = "AmazonEC2, Dockers, PM2, NGINX, Heroku, Firebase, WildFly/JBoss, Maven, MySQL, MongoDB"
-        />
+        <PaperProject 
+            title = "SOFTWARE DEVELOPER"
+            date = "Sept 2019 – Present"
+            skills = "Node JS, Express, React, Material UI, SendGrid, BrainTree, JWT, MySQL, Wordpress, AWS EC2, Heroku"
+            desc = "Tempify – A connected marketplace application for dental temping"
+            d1 = "Architected a Node JS design and implemented it by migrating application from Laravel 5.5 to Node JS. Significantly increased HTTP response times as a result of implementation."
+            d2 = "Developed a script in Node JS to compatibly migrate all legacy customer data to most current MySQL database."
+            d3 = "Redesigned and implemented a dashboard UI using React JS and Material UI with industry standard UX."
+            d4 = "Developed a robust API using SendGrid for boosting customer acquisition and conversions." 
+          />
+          <PaperProject 
+            title = "SOFTWARE DEVELOPER"
+            date = "July – 2020"
+            skills = "Linux, Kubernetes, Dockers, AWS, Node JS, React, SEO, CI/CD, WordPress, Contract Management"
+            desc = "HigherStack Software – A web and mobile development agency"
+            d1 = "Communicated strategic goals and negotiated contracts for win-win transactions with clients"
+            d2 = "Developed and implemented a robust CI/CD pipeline for software development."
+            d3 = "Analyze user requirements and provide technical solutions to different business challenges."
+            d4 = "Engaged in client meetings to discuss UI/UX direction" 
+          />
         <p className = "Paper-label">
-          EXPERIENCE
+          PROJECTS
         </p>
         <div className = "Paper-projects">
           <PaperProject 
-            title = "joeco.me "
-            date = "December 2019 – January 2020"
-            url = "https://www.joeco.me/"
-            d1 = "Deployed using an AWS EC2 Linux instance that runs a NGINX reverse proxy to a PM2 managed express server."
-            d2 = "Designed, architected, and implemented a scalable UX focused, responsive front-end design using React with Material UI components. "
-            d3 = "Configured SSL Certification using NGINX with Let's Encrypt/CertBot to enable HTTPS."
-            d4 = "Implemented Google Analytics to track user activity with user experience improvement in mind." 
+            title = "SOFTWARE DEVELOPER / SYSTEM ADMINISTRATOR"
+            date = "December – January 2020"
+            skills = "Linux, Kubernetes, Java, Wildfly, MySQL, Node JS, Express, React, Material UI, JWT"
+            desc = "Timely – A project management and time tracking application"
+            d1 = "Deployed, maintained, and automated containerized applications on OpenShift, specifically for Node JS, Wildfly, MySQL."
+            d2 = "Designed, architected, and implemented a scalable, UX focused responsive front-end design using React with Material UI components."
+            d3 = "Implemented a secure and scalable authentication middleware in Java using JWT that follows industry standards."
+            d4 = "Architected the project infrastructure with a React front-end and a Java back-end."
           />
           <PaperProject 
-            title = "Tempify"
-            date = "September – December 2019"
-            url = "https://tempify-v2.herokuapp.com/"
+            title = "SOFTWARE DEVELOPER / SYSTEM ADMINISTRATOR"
+            date = "April – May 2019"
+            skills = "Node JS, Express, React, Phaser JS, MySQL, HTML, CSS, Heroku"
+            desc = "Operation Regen – A 2D web-based game inspired by old school classic Mario games."
             d1 = "Implemented authentication with signed JWT tokens to secure API requests."
             d2 = "Refactored codebase from Laravel 5.5 to Node/React increased load speeds by +200%. "
             d3 = "Deployed application through Heroku, and completed a database migration from Remote MySQL to Heroku's MySQL ClearDB add-on."
             d4 = "Implemented MySQL queries to select specific archived data across multiple tables, and used Material UI components to render the data to users."
-          />
-          <PaperProject 
-            title = "Operation Regen"
-            date = "April – May 2019"
-            url = "https://operation-regen.herokuapp.com/"
-            d1 = "Developed a solution to implement the 2D game engine Phaser.js to be wrapped around React as an embedded WebGL canvas."
-            d2 = "Established the MERN stack with an MVC design pattern by bootstrapping Create-React-App to a node express server serving as a backend RESTful service."
-            d3 = "Created an open source bare-bones React-Phaser-Node-Express boilerplate to speed up development for future developers."
-            d4 = "Configured a solution that allowed for Heroku to deploy a React client application proxying an Express server while maintaining reliable connection to a MySQL DB."
-          />
-          <PaperProject 
-            title = "BookApp"
-            date = "September – December 2019"
-            url = "https://appetize.io/app/pwv2aknnphf9y6mep9xkzx8azw"
-            d1 = "Designed a flexible database solution to limit 15 users per available activity for any given day of the week for 6 of the most popular recreation centers in Surrey."
-            d2 = "Developed the mobile application in Android Studios using Java, XML, Firebase Real-Time DB."
-            d3 = "Implemented a denormalize database schema using NoSQL to significantly improve read performance."
-            d4 = "Leveraged the city of Surrey's API dataset to develop a schedule and activities list for clients to sign up with."
-          />
-          <PaperProject 
-            title = "Coachable"
-            date = "September – December 2018"
-            url = "https://coachable-2e83b.firebaseapp.com/"
-            d1 = "Developed a weekly payment form with JQuery, JavaScript, and NoSQL to shows payment totals on a weekly basis for coaches and students."
-            d2 = "Worked in a team of 3 under the Scrum, Agile development methodologies for 4 months."
-            d3 = "Deployed the application on Firebase, using NoSQL for the database."
-            d4 = "Used CSS Bootstrap to build frontend."
           />
         </div>
         <p className= "Paper-label">
@@ -136,19 +120,13 @@ class PaperResume extends Component {
         </p>
         <div className = "Paper-education">
           <PaperEducation
-            title = "ASSOCIATE DEGREE – COMPUTER SYSTEMS TECHNOLOGY BCIT, BURNABY"
-            date = "2018 – Present"
+            title = "DIPLOMA (WITH DISTINCTION) – COMPUTER SYSTEMS TECHNOLOGY BCIT, BURNABY"
+            date = "2020"
           />
           <PaperEducation
             title = "DEGREE – HEALTH SCIENCES SFU, BURNABY"
             date = "2016"
           />
-        </div>
-        <div>
-          <p className="Paper-label">
-            PROJECTS
-          </p>
-          <Projects/>
         </div>
       </div>
     )

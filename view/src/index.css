@@ -17,6 +17,14 @@ code {
 
 @media only screen and (min-width: 0px) and (max-width: 375px) {
 
+  .Resume-container {
+    justify-content: center;
+    font-family: 'Calibri';
+    width: 100%;
+    margin: 0 auto;
+  }
+
+
   .Paper-container {
     font-size:10pt;
   }
@@ -67,6 +75,13 @@ code {
 }
 
 @media only screen and (min-width: 376px) and (max-width: 768px) {
+
+  .Resume-container {
+    justify-content: center;
+    font-family: 'Calibri';
+    width: 100%;
+    margin: 0 auto;
+  }
 
   .Paper-container {
     font-size:10pt;
@@ -121,6 +136,13 @@ code {
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+  .Resume-container {
+    justify-content: center;
+    font-family: 'Calibri';
+    width: 85%;
+    margin: 0 auto;
+  }
 
   .Paper-skills {
     margin-left:50px;
@@ -178,6 +200,13 @@ code {
 
 @media only screen and (min-width: 1025px) and (max-width: 1366px) {
 
+  .Resume-container {
+    justify-content: center;
+    font-family: 'Calibri';
+    width: 75%;
+    margin: 0 auto;
+  }
+
   .Paper-projects li {
     padding: 7px;
     margin-left: 170px;
@@ -213,6 +242,13 @@ code {
 }
 
 @media only screen and (min-width: 1367px) and (max-width: 1920px) {
+  .Resume-container {
+    justify-content: center;
+    font-family: 'Calibri';
+    width: 65%;
+    margin: 0 auto;
+  }
+
 
   .Paper-projects li {
     padding: 7px;

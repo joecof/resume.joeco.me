@@ -1,10 +1,8 @@
 import React, {Component} from 'react';
 import Navbar from '../navbar/Navbar';
-import Header from '../header/Header';
 import Modal from '../modal/Modal';
 import PaperResume from '../paperResume/PaperResume';
 import { Link, animateScroll as scroll } from "react-scroll";
-import Grow from '@material-ui/core/Grow';
 
 import './Resume.css';
 
@@ -42,18 +40,7 @@ class Resume extends Component {
           growEvent = {this.handleClick}
           grow = {this.state.grow}
         />
-        {
-          this.state.grow ?  
-            <Grow in = {true}>
-              <div>
-              <Header/>
-              </div> 
-            </Grow>   
-           : 
-            <PaperResume 
-              growEvent = {this.handleClick}
-            />     
-        }
+        <PaperResume /> 
         {
           this.state.grow && this.state.clicked ?    
             (<Link to="null" onClick={() => scroll.scrollTo(0, {duration: 500})} > 
@@ -65,20 +52,6 @@ class Resume extends Component {
             :
             null
         } 
-
-        {/* {
-          this.state.grow ? 
-            <Link to="null" onClick={() => scroll.scrollTo(850)} > <DownArrow/></Link>
-            :
-            null
-        } */}
-
-        {/* {
-          this.state.grow ? 
-            <Projects/>
-            :
-            null
-        } */}
       </div>
     )
   }

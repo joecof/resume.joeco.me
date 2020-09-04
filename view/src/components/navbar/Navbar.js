@@ -50,7 +50,6 @@ class Navbar extends Component {
   }
 
   listenScrollEvent() {
-
     const distanceY = window.pageYOffset;
 
     if (distanceY >= 50) {
